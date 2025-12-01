@@ -19,7 +19,7 @@ export default function Hero3D() {
       75,
       containerRef.current.clientWidth / containerRef.current.clientHeight,
       0.1,
-      1000
+      1000,
     );
     camera.position.z = 5;
 
@@ -27,7 +27,7 @@ export default function Hero3D() {
     rendererRef.current = renderer;
     renderer.setSize(
       containerRef.current.clientWidth,
-      containerRef.current.clientHeight
+      containerRef.current.clientHeight,
     );
     renderer.setPixelRatio(window.devicePixelRatio);
     containerRef.current.appendChild(renderer.domElement);
@@ -149,6 +149,9 @@ export default function Hero3D() {
   }, []);
 
   return (
-    <div ref={containerRef} className="absolute inset-0 opacity-40 pointer-events-none" />
+    <div
+      ref={containerRef}
+      className="absolute inset-0 opacity-40 pointer-events-none"
+    />
   );
 }

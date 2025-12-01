@@ -62,22 +62,27 @@ const projects = [
     id: 1,
     title: "E-Commerce Platform",
     category: "Web Development",
-    description: "A modern e-commerce solution with real-time inventory management",
-    image: "https://images.unsplash.com/photo-1460925895917-adf4e565db18?w=500&h=300&fit=crop",
+    description:
+      "A modern e-commerce solution with real-time inventory management",
+    image:
+      "https://images.unsplash.com/photo-1460925895917-adf4e565db18?w=500&h=300&fit=crop",
   },
   {
     id: 2,
     title: "Mobile Banking App",
     category: "App Development",
-    description: "Secure banking app with advanced financial management features",
-    image: "https://images.unsplash.com/photo-1563986768609-322d6d3d3180?w=500&h=300&fit=crop",
+    description:
+      "Secure banking app with advanced financial management features",
+    image:
+      "https://images.unsplash.com/photo-1563986768609-322d6d3d3180?w=500&h=300&fit=crop",
   },
   {
     id: 3,
     title: "SaaS Dashboard",
     category: "Web Development",
     description: "Comprehensive analytics dashboard for enterprise clients",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&h=300&fit=crop",
+    image:
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&h=300&fit=crop",
   },
 ];
 
@@ -128,7 +133,9 @@ export default function Index() {
             <div className="grid grid-cols-3 gap-8 max-w-2xl mx-auto text-center">
               <div>
                 <p className="text-3xl font-bold text-primary">50+</p>
-                <p className="text-sm text-muted-foreground">Projects Delivered</p>
+                <p className="text-sm text-muted-foreground">
+                  Projects Delivered
+                </p>
               </div>
               <div>
                 <p className="text-3xl font-bold text-secondary">30+</p>
@@ -136,7 +143,9 @@ export default function Index() {
               </div>
               <div>
                 <p className="text-3xl font-bold text-accent">5+</p>
-                <p className="text-sm text-muted-foreground">Years Experience</p>
+                <p className="text-sm text-muted-foreground">
+                  Years Experience
+                </p>
               </div>
             </div>
           </div>
@@ -144,7 +153,10 @@ export default function Index() {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="py-20 md:py-32 bg-gradient-to-b from-white to-slate-50 dark:from-slate-950 dark:to-slate-900">
+      <section
+        id="services"
+        className="py-20 md:py-32 bg-gradient-to-b from-white to-slate-50 dark:from-slate-950 dark:to-slate-900"
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4">
