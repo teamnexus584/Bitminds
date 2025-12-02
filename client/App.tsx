@@ -6,6 +6,12 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import Projects from "./pages/Projects";
 import NotFound from "./pages/NotFound";
+import WebDevelopment from "./pages/services/WebDevelopment";
+import AppDevelopment from "./pages/services/AppDevelopment";
+import UIUXDesign from "./pages/services/UIUXDesign";
+import Consulting from "./pages/services/Consulting";
+import Performance from "./pages/services/Performance";
+import GrowthStrategy from "./pages/services/GrowthStrategy";
 
 const queryClient = new QueryClient();
 
