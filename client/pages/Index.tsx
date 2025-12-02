@@ -191,8 +191,8 @@ export default function Index() {
                     {service.description}
                   </p>
 
-                  <a
-                    href="#"
+                  <Link
+                    to={service.link}
                     className="inline-flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all group/link"
                   >
                     Learn More
@@ -200,7 +200,7 @@ export default function Index() {
                       size={16}
                       className="group-hover/link:translate-x-1 transition-transform"
                     />
-                  </a>
+                  </Link>
                 </div>
               );
             })}
