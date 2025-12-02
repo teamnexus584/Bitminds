@@ -30,14 +30,6 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link
-                  to="/projects"
-                  className="hover:text-primary transition-colors"
-                >
-                  Portfolio
-                </Link>
-              </li>
-              <li>
                 <a
                   href="#services"
                   className="hover:text-primary transition-colors"
