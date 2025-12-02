@@ -18,6 +18,7 @@ const services = [
     description:
       "Build scalable, high-performance web applications with cutting-edge technologies. From startups to enterprises, we deliver solutions tailored to your needs.",
     color: "from-blue-500 to-cyan-500",
+    link: "/services/web-development",
   },
   {
     icon: Smartphone,
@@ -25,6 +26,7 @@ const services = [
     description:
       "Create intuitive mobile and cross-platform apps that engage users and drive business growth. Native and hybrid solutions available.",
     color: "from-purple-500 to-pink-500",
+    link: "/services/app-development",
   },
   {
     icon: Palette,
@@ -32,6 +34,7 @@ const services = [
     description:
       "Design beautiful, user-centric interfaces that convert. We combine aesthetics with functionality to create memorable experiences.",
     color: "from-orange-500 to-red-500",
+    link: "/services/ui-ux-design",
   },
   {
     icon: Zap,
@@ -39,6 +42,7 @@ const services = [
     description:
       "Optimize your digital products for speed and efficiency. Lightning-fast load times and smooth interactions are our standard.",
     color: "from-yellow-500 to-orange-500",
+    link: "/services/performance",
   },
   {
     icon: Users,
@@ -46,6 +50,7 @@ const services = [
     description:
       "Get expert guidance on your technology roadmap. We help you make informed decisions for your digital transformation journey.",
     color: "from-green-500 to-teal-500",
+    link: "/services/consulting",
   },
   {
     icon: TrendingUp,
@@ -53,6 +58,7 @@ const services = [
     description:
       "Scale your product strategically. Data-driven insights and proven methodologies to accelerate your business growth.",
     color: "from-indigo-500 to-blue-500",
+    link: "/services/growth-strategy",
   },
 ];
 
