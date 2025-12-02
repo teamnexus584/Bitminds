@@ -128,7 +128,7 @@ export default function Footer() {
 
         {/* Bottom */}
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-gray-400 text-sm">
-          <p>&copy; 2024 Bitminds. All rights reserved.</p>
+          <p>&copy; 2024 8bitdevelopers. All rights reserved.</p>
           <div className="flex gap-6">
             <a href="#" className="hover:text-primary transition-colors">
               Privacy Policy
