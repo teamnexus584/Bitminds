@@ -12,7 +12,7 @@ export default function Footer() {
               <div className="w-8 h-8 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center text-white text-sm font-mono">
                 8B
               </div>
-              <span className="font-bold text-lg">8bitdevelopers</span>
+              <span className="font-bold text-lg">8bitdev</span>
             </div>
             <p className="text-gray-400 text-sm">
               Transform your ideas into powerful digital solutions with modern
