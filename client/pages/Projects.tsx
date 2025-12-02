@@ -78,7 +78,6 @@ const allProjects = [
 ];
 
 export default function Projects() {
-
   return (
     <div className="min-h-screen bg-white dark:bg-slate-950">
       <Header />
@@ -95,7 +94,6 @@ export default function Projects() {
           </p>
         </div>
       </section>
-
 
       {/* Projects Grid */}
       <section className="py-20 md:py-32">

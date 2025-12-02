@@ -1,38 +1,52 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { Palette, Users, Sparkles, Eye, Zap, Accessibility, ArrowRight } from "lucide-react";
+import {
+  Palette,
+  Users,
+  Sparkles,
+  Eye,
+  Zap,
+  Accessibility,
+  ArrowRight,
+} from "lucide-react";
 
 export default function UIUXDesign() {
   const services = [
     {
       icon: Users,
       title: "User Research",
-      description: "Deep dive into user behavior, needs, and pain points through interviews and testing.",
+      description:
+        "Deep dive into user behavior, needs, and pain points through interviews and testing.",
     },
     {
       icon: Sparkles,
       title: "Visual Design",
-      description: "Create beautiful, consistent visual identities that resonate with your audience.",
+      description:
+        "Create beautiful, consistent visual identities that resonate with your audience.",
     },
     {
       icon: Eye,
       title: "Interaction Design",
-      description: "Design intuitive interactions and microinteractions that delight users.",
+      description:
+        "Design intuitive interactions and microinteractions that delight users.",
     },
     {
       icon: Palette,
       title: "Design Systems",
-      description: "Build scalable design systems that ensure consistency across all products.",
+      description:
+        "Build scalable design systems that ensure consistency across all products.",
     },
     {
       icon: Zap,
       title: "Prototyping",
-      description: "Create interactive prototypes to test concepts before development.",
+      description:
+        "Create interactive prototypes to test concepts before development.",
     },
     {
       icon: Accessibility,
       title: "Accessibility",
-      description: "Ensure your designs are inclusive and accessible to all users.",
+      description:
+        "Ensure your designs are inclusive and accessible to all users.",
     },
   ];
 
@@ -58,20 +72,17 @@ export default function UIUXDesign() {
     {
       step: "04",
       title: "Prototyping",
-      description:
-        "Build interactive prototypes to validate design decisions.",
+      description: "Build interactive prototypes to validate design decisions.",
     },
     {
       step: "05",
       title: "Testing & Iteration",
-      description:
-        "Test with real users and refine based on feedback.",
+      description: "Test with real users and refine based on feedback.",
     },
     {
       step: "06",
       title: "Handoff & Support",
-      description:
-        "Provide design specs and support throughout development.",
+      description: "Provide design specs and support throughout development.",
     },
   ];
 
@@ -114,8 +125,9 @@ export default function UIUXDesign() {
               UI/UX Design
             </h1>
             <p className="text-xl text-muted-foreground mb-8">
-              Create beautiful, intuitive interfaces that users love. We combine research,
-              strategy, and creativity to design experiences that drive engagement and growth.
+              Create beautiful, intuitive interfaces that users love. We combine
+              research, strategy, and creativity to design experiences that
+              drive engagement and growth.
             </p>
             <button className="px-8 py-4 bg-accent text-accent-foreground rounded-lg font-semibold hover:bg-accent/90 transition-all transform hover:scale-105 shadow-lg">
               Start a Project
@@ -148,9 +160,7 @@ export default function UIUXDesign() {
                   <h3 className="text-xl font-bold text-foreground mb-3">
                     {service.title}
                   </h3>
-                  <p className="text-muted-foreground">
-                    {service.description}
-                  </p>
+                  <p className="text-muted-foreground">{service.description}</p>
                 </div>
               );
             })}
@@ -179,9 +189,7 @@ export default function UIUXDesign() {
                 <h3 className="text-xl font-bold text-foreground mb-3">
                   {principle.title}
                 </h3>
-                <p className="text-muted-foreground">
-                  {principle.description}
-                </p>
+                <p className="text-muted-foreground">{principle.description}</p>
               </div>
             ))}
           </div>
@@ -210,9 +218,7 @@ export default function UIUXDesign() {
                   <h3 className="text-xl font-bold text-foreground mb-3">
                     {item.title}
                   </h3>
-                  <p className="text-muted-foreground">
-                    {item.description}
-                  </p>
+                  <p className="text-muted-foreground">{item.description}</p>
                 </div>
               </div>
             ))}
@@ -266,7 +272,8 @@ export default function UIUXDesign() {
             Let's Design Something Amazing
           </h2>
           <p className="text-lg text-white/80 mb-8 max-w-2xl mx-auto">
-            Ready to transform your digital experience? Let's create something users will love.
+            Ready to transform your digital experience? Let's create something
+            users will love.
           </p>
           <button className="px-8 py-4 bg-white text-primary rounded-lg font-semibold hover:bg-slate-50 transition-all transform hover:scale-105 shadow-lg inline-flex items-center gap-2">
             Start Designing

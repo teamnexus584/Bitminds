@@ -228,7 +228,11 @@ export default function Index() {
                 key={project.id}
                 href={project.link}
                 target={project.link.startsWith("http") ? "_blank" : undefined}
-                rel={project.link.startsWith("http") ? "noopener noreferrer" : undefined}
+                rel={
+                  project.link.startsWith("http")
+                    ? "noopener noreferrer"
+                    : undefined
+                }
                 className="group relative rounded-2xl overflow-hidden border border-border hover:border-primary/50 transition-all hover:shadow-xl hover:shadow-primary/20 block"
               >
                 <div className="relative overflow-hidden bg-slate-200 dark:bg-slate-800 h-64">

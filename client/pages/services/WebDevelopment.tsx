@@ -1,28 +1,40 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { CheckCircle, Zap, Globe, Lock, BarChart3, Code2, ArrowRight } from "lucide-react";
+import {
+  CheckCircle,
+  Zap,
+  Globe,
+  Lock,
+  BarChart3,
+  Code2,
+  ArrowRight,
+} from "lucide-react";
 
 export default function WebDevelopment() {
   const features = [
     {
       icon: Globe,
       title: "Responsive Design",
-      description: "Beautiful, responsive websites that look great on all devices and screen sizes.",
+      description:
+        "Beautiful, responsive websites that look great on all devices and screen sizes.",
     },
     {
       icon: Zap,
       title: "Lightning Fast",
-      description: "Optimized performance with fast load times and smooth user experiences.",
+      description:
+        "Optimized performance with fast load times and smooth user experiences.",
     },
     {
       icon: Lock,
       title: "Secure & Scalable",
-      description: "Enterprise-grade security with scalable architecture for growing businesses.",
+      description:
+        "Enterprise-grade security with scalable architecture for growing businesses.",
     },
     {
       icon: Code2,
       title: "Modern Stack",
-      description: "Built with latest technologies: React, Node.js, TypeScript, and more.",
+      description:
+        "Built with latest technologies: React, Node.js, TypeScript, and more.",
     },
     {
       icon: BarChart3,
@@ -32,7 +44,8 @@ export default function WebDevelopment() {
     {
       icon: CheckCircle,
       title: "Quality Assurance",
-      description: "Rigorous testing and quality checks ensure flawless deployment.",
+      description:
+        "Rigorous testing and quality checks ensure flawless deployment.",
     },
   ];
 
@@ -64,8 +77,7 @@ export default function WebDevelopment() {
     {
       step: "05",
       title: "Launch",
-      description:
-        "Deploy to production with monitoring and support.",
+      description: "Deploy to production with monitoring and support.",
     },
     {
       step: "06",
@@ -87,8 +99,9 @@ export default function WebDevelopment() {
               Web Development
             </h1>
             <p className="text-xl text-muted-foreground mb-8">
-              Building powerful, scalable web applications that drive business growth. From
-              startups to enterprises, we deliver solutions tailored to your unique needs.
+              Building powerful, scalable web applications that drive business
+              growth. From startups to enterprises, we deliver solutions
+              tailored to your unique needs.
             </p>
             <button className="px-8 py-4 bg-primary text-primary-foreground rounded-lg font-semibold hover:bg-primary/90 transition-all transform hover:scale-105 shadow-lg">
               Start Your Project
@@ -105,7 +118,8 @@ export default function WebDevelopment() {
               What We Deliver
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Comprehensive web development solutions with cutting-edge technology
+              Comprehensive web development solutions with cutting-edge
+              technology
             </p>
           </div>
 
@@ -121,9 +135,7 @@ export default function WebDevelopment() {
                   <h3 className="text-xl font-bold text-foreground mb-3">
                     {feature.title}
                   </h3>
-                  <p className="text-muted-foreground">
-                    {feature.description}
-                  </p>
+                  <p className="text-muted-foreground">{feature.description}</p>
                 </div>
               );
             })}
@@ -153,9 +165,7 @@ export default function WebDevelopment() {
                   <h3 className="text-xl font-bold text-foreground mb-3">
                     {item.title}
                   </h3>
-                  <p className="text-muted-foreground">
-                    {item.description}
-                  </p>
+                  <p className="text-muted-foreground">{item.description}</p>
                 </div>
               </div>
             ))}
@@ -213,7 +223,8 @@ export default function WebDevelopment() {
             Ready to Build Your Web Application?
           </h2>
           <p className="text-lg text-white/80 mb-8 max-w-2xl mx-auto">
-            Let's discuss your project requirements and create something amazing.
+            Let's discuss your project requirements and create something
+            amazing.
           </p>
           <button className="px-8 py-4 bg-white text-primary rounded-lg font-semibold hover:bg-slate-50 transition-all transform hover:scale-105 shadow-lg inline-flex items-center gap-2">
             Get Started

@@ -1,38 +1,52 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { Zap, BarChart3, Gauge, Cpu, Shield, Lightbulb, ArrowRight } from "lucide-react";
+import {
+  Zap,
+  BarChart3,
+  Gauge,
+  Cpu,
+  Shield,
+  Lightbulb,
+  ArrowRight,
+} from "lucide-react";
 
 export default function Performance() {
   const services = [
     {
       icon: Gauge,
       title: "Performance Audits",
-      description: "Comprehensive analysis of your application's performance metrics and bottlenecks.",
+      description:
+        "Comprehensive analysis of your application's performance metrics and bottlenecks.",
     },
     {
       icon: Zap,
       title: "Speed Optimization",
-      description: "Improve load times through code optimization, caching, and CDN strategies.",
+      description:
+        "Improve load times through code optimization, caching, and CDN strategies.",
     },
     {
       icon: Cpu,
       title: "Infrastructure Optimization",
-      description: "Optimize server configuration, database queries, and resource usage.",
+      description:
+        "Optimize server configuration, database queries, and resource usage.",
     },
     {
       icon: BarChart3,
       title: "Monitoring & Analytics",
-      description: "Set up comprehensive monitoring to track performance metrics continuously.",
+      description:
+        "Set up comprehensive monitoring to track performance metrics continuously.",
     },
     {
       icon: Shield,
       title: "Security Performance",
-      description: "Optimize security measures without compromising performance.",
+      description:
+        "Optimize security measures without compromising performance.",
     },
     {
       icon: Lightbulb,
       title: "Scalability Planning",
-      description: "Design systems that scale efficiently as your user base grows.",
+      description:
+        "Design systems that scale efficiently as your user base grows.",
     },
   ];
 
@@ -114,8 +128,9 @@ export default function Performance() {
               Performance Optimization
             </h1>
             <p className="text-xl text-muted-foreground mb-8">
-              Lightning-fast applications that delight users and boost your business metrics.
-              We optimize every layer of your stack for maximum speed and efficiency.
+              Lightning-fast applications that delight users and boost your
+              business metrics. We optimize every layer of your stack for
+              maximum speed and efficiency.
             </p>
             <button className="px-8 py-4 bg-primary text-primary-foreground rounded-lg font-semibold hover:bg-primary/90 transition-all transform hover:scale-105 shadow-lg">
               Audit Your Performance
@@ -148,9 +163,7 @@ export default function Performance() {
                   <h3 className="text-xl font-bold text-foreground mb-3">
                     {service.title}
                   </h3>
-                  <p className="text-muted-foreground">
-                    {service.description}
-                  </p>
+                  <p className="text-muted-foreground">{service.description}</p>
                 </div>
               );
             })}
@@ -166,7 +179,8 @@ export default function Performance() {
               Key Performance Metrics
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              We focus on metrics that matter for user experience and business success
+              We focus on metrics that matter for user experience and business
+              success
             </p>
           </div>
 
@@ -180,9 +194,7 @@ export default function Performance() {
                   {item.metric}
                 </h3>
                 <p className="text-primary font-semibold mb-3">{item.target}</p>
-                <p className="text-muted-foreground text-sm">
-                  {item.impact}
-                </p>
+                <p className="text-muted-foreground text-sm">{item.impact}</p>
               </div>
             ))}
           </div>
@@ -216,7 +228,9 @@ export default function Performance() {
                       key={itemIndex}
                       className="flex gap-3 text-muted-foreground"
                     >
-                      <span className="text-primary font-bold flex-shrink-0">✓</span>
+                      <span className="text-primary font-bold flex-shrink-0">
+                        ✓
+                      </span>
                       <span>{item}</span>
                     </li>
                   ))}
@@ -235,7 +249,8 @@ export default function Performance() {
               Tools & Technologies
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Industry-standard tools for performance monitoring and optimization
+              Industry-standard tools for performance monitoring and
+              optimization
             </p>
           </div>
 
@@ -273,7 +288,8 @@ export default function Performance() {
             Make Your Application Lightning Fast
           </h2>
           <p className="text-lg text-white/80 mb-8 max-w-2xl mx-auto">
-            Optimize your performance and provide users with the best experience.
+            Optimize your performance and provide users with the best
+            experience.
           </p>
           <button className="px-8 py-4 bg-white text-primary rounded-lg font-semibold hover:bg-slate-50 transition-all transform hover:scale-105 shadow-lg inline-flex items-center gap-2">
             Get a Performance Audit

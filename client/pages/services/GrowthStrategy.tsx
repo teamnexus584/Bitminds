@@ -1,45 +1,60 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { TrendingUp, Target, Users, BarChart3, Lightbulb, Zap, ArrowRight } from "lucide-react";
+import {
+  TrendingUp,
+  Target,
+  Users,
+  BarChart3,
+  Lightbulb,
+  Zap,
+  ArrowRight,
+} from "lucide-react";
 
 export default function GrowthStrategy() {
   const services = [
     {
       icon: Target,
       title: "Market Analysis",
-      description: "Deep analysis of your market, competitors, and growth opportunities.",
+      description:
+        "Deep analysis of your market, competitors, and growth opportunities.",
     },
     {
       icon: TrendingUp,
       title: "Growth Planning",
-      description: "Develop a comprehensive growth strategy aligned with your business goals.",
+      description:
+        "Develop a comprehensive growth strategy aligned with your business goals.",
     },
     {
       icon: Users,
       title: "User Acquisition",
-      description: "Strategies to attract, engage, and retain your target audience.",
+      description:
+        "Strategies to attract, engage, and retain your target audience.",
     },
     {
       icon: BarChart3,
       title: "Data Analytics",
-      description: "Set up analytics to measure and optimize every aspect of your product.",
+      description:
+        "Set up analytics to measure and optimize every aspect of your product.",
     },
     {
       icon: Lightbulb,
       title: "Feature Strategy",
-      description: "Identify and prioritize features that drive growth and engagement.",
+      description:
+        "Identify and prioritize features that drive growth and engagement.",
     },
     {
       icon: Zap,
       title: "Monetization",
-      description: "Develop sustainable monetization strategies for your product.",
+      description:
+        "Develop sustainable monetization strategies for your product.",
     },
   ];
 
   const pillars = [
     {
       title: "Product Excellence",
-      description: "Build the best product in your category with features users love.",
+      description:
+        "Build the best product in your category with features users love.",
       points: [
         "User research and feedback loops",
         "Feature prioritization frameworks",
@@ -49,7 +64,8 @@ export default function GrowthStrategy() {
     },
     {
       title: "Market Fit",
-      description: "Ensure your product solves real problems for your target market.",
+      description:
+        "Ensure your product solves real problems for your target market.",
       points: [
         "Customer segmentation",
         "Problem-solution fit validation",
@@ -69,7 +85,8 @@ export default function GrowthStrategy() {
     },
     {
       title: "Team & Culture",
-      description: "Build and nurture a high-performing team focused on growth.",
+      description:
+        "Build and nurture a high-performing team focused on growth.",
       points: [
         "Team structure and roles",
         "Growth mindset development",
@@ -82,19 +99,23 @@ export default function GrowthStrategy() {
   const strategies = [
     {
       strategy: "Viral Growth",
-      description: "Create mechanisms for users to naturally share and invite others.",
+      description:
+        "Create mechanisms for users to naturally share and invite others.",
     },
     {
       strategy: "Content Marketing",
-      description: "Build authority through valuable content that attracts your audience.",
+      description:
+        "Build authority through valuable content that attracts your audience.",
     },
     {
       strategy: "Partnership Growth",
-      description: "Identify and leverage strategic partnerships for mutual growth.",
+      description:
+        "Identify and leverage strategic partnerships for mutual growth.",
     },
     {
       strategy: "Product-Led Growth",
-      description: "Let your product drive growth through exceptional user experience.",
+      description:
+        "Let your product drive growth through exceptional user experience.",
     },
     {
       strategy: "Retention Focus",
@@ -118,8 +139,9 @@ export default function GrowthStrategy() {
               Growth Strategy
             </h1>
             <p className="text-xl text-muted-foreground mb-8">
-              Scale your product strategically. Our proven methodologies help you acquire users,
-              increase engagement, and drive sustainable business growth.
+              Scale your product strategically. Our proven methodologies help
+              you acquire users, increase engagement, and drive sustainable
+              business growth.
             </p>
             <button className="px-8 py-4 bg-primary text-primary-foreground rounded-lg font-semibold hover:bg-primary/90 transition-all transform hover:scale-105 shadow-lg">
               Discuss Your Growth
@@ -152,9 +174,7 @@ export default function GrowthStrategy() {
                   <h3 className="text-xl font-bold text-foreground mb-3">
                     {service.title}
                   </h3>
-                  <p className="text-muted-foreground">
-                    {service.description}
-                  </p>
+                  <p className="text-muted-foreground">{service.description}</p>
                 </div>
               );
             })}
@@ -189,7 +209,9 @@ export default function GrowthStrategy() {
                 <ul className="space-y-3">
                   {pillar.points.map((point, pointIndex) => (
                     <li key={pointIndex} className="flex gap-3">
-                      <span className="text-primary font-bold flex-shrink-0">✓</span>
+                      <span className="text-primary font-bold flex-shrink-0">
+                        ✓
+                      </span>
                       <span className="text-muted-foreground">{point}</span>
                     </li>
                   ))}
@@ -221,9 +243,7 @@ export default function GrowthStrategy() {
                 <h3 className="text-lg font-bold text-foreground mb-2">
                   {item.strategy}
                 </h3>
-                <p className="text-muted-foreground">
-                  {item.description}
-                </p>
+                <p className="text-muted-foreground">{item.description}</p>
               </div>
             ))}
           </div>
@@ -277,7 +297,8 @@ export default function GrowthStrategy() {
             Ready to Scale Your Business?
           </h2>
           <p className="text-lg text-white/80 mb-8 max-w-2xl mx-auto">
-            Let's develop a growth strategy that drives real results for your business.
+            Let's develop a growth strategy that drives real results for your
+            business.
           </p>
           <button className="px-8 py-4 bg-white text-primary rounded-lg font-semibold hover:bg-slate-50 transition-all transform hover:scale-105 shadow-lg inline-flex items-center gap-2">
             Get Started

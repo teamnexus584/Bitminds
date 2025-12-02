@@ -1,53 +1,70 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { Lightbulb, Compass, TrendingUp, Users, GitBranch, Target, ArrowRight } from "lucide-react";
+import {
+  Lightbulb,
+  Compass,
+  TrendingUp,
+  Users,
+  GitBranch,
+  Target,
+  ArrowRight,
+} from "lucide-react";
 
 export default function Consulting() {
   const services = [
     {
       icon: Compass,
       title: "Technology Roadmap",
-      description: "Define your long-term technology strategy aligned with business goals.",
+      description:
+        "Define your long-term technology strategy aligned with business goals.",
     },
     {
       icon: GitBranch,
       title: "Architecture Design",
-      description: "Design scalable, maintainable system architectures for your applications.",
+      description:
+        "Design scalable, maintainable system architectures for your applications.",
     },
     {
       icon: TrendingUp,
       title: "Digital Transformation",
-      description: "Guide your organization through digital transformation initiatives.",
+      description:
+        "Guide your organization through digital transformation initiatives.",
     },
     {
       icon: Users,
       title: "Team Guidance",
-      description: "Train and mentor your development teams on best practices and new technologies.",
+      description:
+        "Train and mentor your development teams on best practices and new technologies.",
     },
     {
       icon: Target,
       title: "Process Optimization",
-      description: "Improve your development processes, workflows, and team productivity.",
+      description:
+        "Improve your development processes, workflows, and team productivity.",
     },
     {
       icon: Lightbulb,
       title: "Innovation Strategy",
-      description: "Identify opportunities for innovation and competitive advantage.",
+      description:
+        "Identify opportunities for innovation and competitive advantage.",
     },
   ];
 
   const expertise = [
     {
       area: "Technology Stack Selection",
-      description: "Choose the right technologies for your project requirements.",
+      description:
+        "Choose the right technologies for your project requirements.",
     },
     {
       area: "Cloud Architecture",
-      description: "Design and optimize cloud infrastructure (AWS, Azure, GCP).",
+      description:
+        "Design and optimize cloud infrastructure (AWS, Azure, GCP).",
     },
     {
       area: "DevOps & CI/CD",
-      description: "Implement modern DevOps practices and continuous deployment.",
+      description:
+        "Implement modern DevOps practices and continuous deployment.",
     },
     {
       area: "Microservices Architecture",
@@ -55,7 +72,8 @@ export default function Consulting() {
     },
     {
       area: "Security & Compliance",
-      description: "Ensure your systems meet security and compliance requirements.",
+      description:
+        "Ensure your systems meet security and compliance requirements.",
     },
     {
       area: "Agile & Scrum",
@@ -75,8 +93,9 @@ export default function Consulting() {
               Technology Consulting
             </h1>
             <p className="text-xl text-muted-foreground mb-8">
-              Get expert guidance on your technology roadmap, architecture, and digital
-              transformation. Our consultants bring years of experience across industries.
+              Get expert guidance on your technology roadmap, architecture, and
+              digital transformation. Our consultants bring years of experience
+              across industries.
             </p>
             <button className="px-8 py-4 bg-primary text-primary-foreground rounded-lg font-semibold hover:bg-primary/90 transition-all transform hover:scale-105 shadow-lg">
               Schedule Consultation
@@ -109,9 +128,7 @@ export default function Consulting() {
                   <h3 className="text-xl font-bold text-foreground mb-3">
                     {service.title}
                   </h3>
-                  <p className="text-muted-foreground">
-                    {service.description}
-                  </p>
+                  <p className="text-muted-foreground">{service.description}</p>
                 </div>
               );
             })}
@@ -140,9 +157,7 @@ export default function Consulting() {
                 <h3 className="text-xl font-bold text-foreground mb-3">
                   {exp.area}
                 </h3>
-                <p className="text-muted-foreground">
-                  {exp.description}
-                </p>
+                <p className="text-muted-foreground">{exp.description}</p>
               </div>
             ))}
           </div>
@@ -166,22 +181,26 @@ export default function Consulting() {
               {
                 step: "1",
                 title: "Discovery",
-                description: "Understand your current state, challenges, and business objectives.",
+                description:
+                  "Understand your current state, challenges, and business objectives.",
               },
               {
                 step: "2",
                 title: "Analysis",
-                description: "Analyze your systems, processes, and identify opportunities.",
+                description:
+                  "Analyze your systems, processes, and identify opportunities.",
               },
               {
                 step: "3",
                 title: "Strategy",
-                description: "Develop a comprehensive strategy and roadmap for improvement.",
+                description:
+                  "Develop a comprehensive strategy and roadmap for improvement.",
               },
               {
                 step: "4",
                 title: "Implementation",
-                description: "Guide implementation with hands-on support and mentoring.",
+                description:
+                  "Guide implementation with hands-on support and mentoring.",
               },
               {
                 step: "5",
@@ -199,9 +218,7 @@ export default function Consulting() {
                   <h3 className="text-xl font-bold text-foreground mb-2">
                     {phase.title}
                   </h3>
-                  <p className="text-muted-foreground">
-                    {phase.description}
-                  </p>
+                  <p className="text-muted-foreground">{phase.description}</p>
                 </div>
               </div>
             ))}
@@ -221,7 +238,8 @@ export default function Consulting() {
             Ready for Expert Guidance?
           </h2>
           <p className="text-lg text-white/80 mb-8 max-w-2xl mx-auto">
-            Let's discuss how we can help accelerate your digital transformation.
+            Let's discuss how we can help accelerate your digital
+            transformation.
           </p>
           <button className="px-8 py-4 bg-white text-primary rounded-lg font-semibold hover:bg-slate-50 transition-all transform hover:scale-105 shadow-lg inline-flex items-center gap-2">
             Schedule a Consultation

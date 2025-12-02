@@ -23,17 +23,26 @@ export default function App() {
         <Sonner />
         <BrowserRouter>
           <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/services/web-development" element={<WebDevelopment />} />
-          <Route path="/services/app-development" element={<AppDevelopment />} />
-          <Route path="/services/ui-ux-design" element={<UIUXDesign />} />
-          <Route path="/services/consulting" element={<Consulting />} />
-          <Route path="/services/performance" element={<Performance />} />
-          <Route path="/services/growth-strategy" element={<GrowthStrategy />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
+            <Route path="/" element={<Index />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route
+              path="/services/web-development"
+              element={<WebDevelopment />}
+            />
+            <Route
+              path="/services/app-development"
+              element={<AppDevelopment />}
+            />
+            <Route path="/services/ui-ux-design" element={<UIUXDesign />} />
+            <Route path="/services/consulting" element={<Consulting />} />
+            <Route path="/services/performance" element={<Performance />} />
+            <Route
+              path="/services/growth-strategy"
+              element={<GrowthStrategy />}
+            />
+            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+            <Route path="*" element={<NotFound />} />
+          </Routes>
         </BrowserRouter>
       </TooltipProvider>
     </QueryClientProvider>

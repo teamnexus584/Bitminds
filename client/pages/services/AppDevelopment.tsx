@@ -1,47 +1,70 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { Smartphone, Zap, Lock, Users, TrendingUp, Target, ArrowRight } from "lucide-react";
+import {
+  Smartphone,
+  Zap,
+  Lock,
+  Users,
+  TrendingUp,
+  Target,
+  ArrowRight,
+} from "lucide-react";
 
 export default function AppDevelopment() {
   const features = [
     {
       icon: Smartphone,
       title: "Native & Cross-Platform",
-      description: "iOS, Android, and cross-platform development with React Native and Flutter.",
+      description:
+        "iOS, Android, and cross-platform development with React Native and Flutter.",
     },
     {
       icon: Zap,
       title: "High Performance",
-      description: "Optimized apps that deliver fast, smooth experiences on all devices.",
+      description:
+        "Optimized apps that deliver fast, smooth experiences on all devices.",
     },
     {
       icon: Lock,
       title: "Security First",
-      description: "Enterprise-grade security with biometric auth, encryption, and data protection.",
+      description:
+        "Enterprise-grade security with biometric auth, encryption, and data protection.",
     },
     {
       icon: Users,
       title: "User-Centric Design",
-      description: "Intuitive interfaces that users love and engage with regularly.",
+      description:
+        "Intuitive interfaces that users love and engage with regularly.",
     },
     {
       icon: TrendingUp,
       title: "Scalability",
-      description: "Apps built to scale from hundreds to millions of users seamlessly.",
+      description:
+        "Apps built to scale from hundreds to millions of users seamlessly.",
     },
     {
       icon: Target,
       title: "App Store Ready",
-      description: "Full support for App Store and Google Play deployment and optimization.",
+      description:
+        "Full support for App Store and Google Play deployment and optimization.",
     },
   ];
 
   const platforms = [
-    { name: "iOS", description: "Native Swift development for iPhone and iPad" },
+    {
+      name: "iOS",
+      description: "Native Swift development for iPhone and iPad",
+    },
     { name: "Android", description: "Kotlin and Java native development" },
-    { name: "React Native", description: "Cross-platform development with shared code" },
+    {
+      name: "React Native",
+      description: "Cross-platform development with shared code",
+    },
     { name: "Flutter", description: "Beautiful apps for iOS and Android" },
-    { name: "Web Apps", description: "Progressive web apps and web-based mobile apps" },
+    {
+      name: "Web Apps",
+      description: "Progressive web apps and web-based mobile apps",
+    },
     { name: "Wearables", description: "Smartwatch and IoT device development" },
   ];
 
@@ -49,20 +72,17 @@ export default function AppDevelopment() {
     {
       step: "01",
       title: "Strategy & Planning",
-      description:
-        "Define app goals, target users, and platform strategy.",
+      description: "Define app goals, target users, and platform strategy.",
     },
     {
       step: "02",
       title: "UI/UX Design",
-      description:
-        "Create beautiful, intuitive designs optimized for mobile.",
+      description: "Create beautiful, intuitive designs optimized for mobile.",
     },
     {
       step: "03",
       title: "Development",
-      description:
-        "Build your app with clean, maintainable code.",
+      description: "Build your app with clean, maintainable code.",
     },
     {
       step: "04",
@@ -73,14 +93,12 @@ export default function AppDevelopment() {
     {
       step: "05",
       title: "App Store Launch",
-      description:
-        "Prepare, optimize, and launch on App Store and Play Store.",
+      description: "Prepare, optimize, and launch on App Store and Play Store.",
     },
     {
       step: "06",
       title: "Continuous Support",
-      description:
-        "Regular updates, monitoring, and feature enhancements.",
+      description: "Regular updates, monitoring, and feature enhancements.",
     },
   ];
 
@@ -96,8 +114,9 @@ export default function AppDevelopment() {
               App Development
             </h1>
             <p className="text-xl text-muted-foreground mb-8">
-              Create powerful mobile and cross-platform applications that engage users and
-              drive business growth. From concept to App Store launch, we handle it all.
+              Create powerful mobile and cross-platform applications that engage
+              users and drive business growth. From concept to App Store launch,
+              we handle it all.
             </p>
             <button className="px-8 py-4 bg-secondary text-secondary-foreground rounded-lg font-semibold hover:bg-secondary/90 transition-all transform hover:scale-105 shadow-lg">
               Start Your App
@@ -114,7 +133,8 @@ export default function AppDevelopment() {
               What We Build
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Full-featured mobile applications with world-class user experiences
+              Full-featured mobile applications with world-class user
+              experiences
             </p>
           </div>
 
@@ -130,9 +150,7 @@ export default function AppDevelopment() {
                   <h3 className="text-xl font-bold text-foreground mb-3">
                     {feature.title}
                   </h3>
-                  <p className="text-muted-foreground">
-                    {feature.description}
-                  </p>
+                  <p className="text-muted-foreground">{feature.description}</p>
                 </div>
               );
             })}
@@ -161,9 +179,7 @@ export default function AppDevelopment() {
                 <h3 className="text-xl font-bold text-foreground mb-3">
                   {platform.name}
                 </h3>
-                <p className="text-muted-foreground">
-                  {platform.description}
-                </p>
+                <p className="text-muted-foreground">{platform.description}</p>
               </div>
             ))}
           </div>
@@ -192,9 +208,7 @@ export default function AppDevelopment() {
                   <h3 className="text-xl font-bold text-foreground mb-3">
                     {item.title}
                   </h3>
-                  <p className="text-muted-foreground">
-                    {item.description}
-                  </p>
+                  <p className="text-muted-foreground">{item.description}</p>
                 </div>
               </div>
             ))}
@@ -214,7 +228,8 @@ export default function AppDevelopment() {
             Ready to Launch Your App?
           </h2>
           <p className="text-lg text-white/80 mb-8 max-w-2xl mx-auto">
-            Let's turn your app idea into reality. Contact us for a consultation.
+            Let's turn your app idea into reality. Contact us for a
+            consultation.
           </p>
           <button className="px-8 py-4 bg-white text-primary rounded-lg font-semibold hover:bg-slate-50 transition-all transform hover:scale-105 shadow-lg inline-flex items-center gap-2">
             Get Started
