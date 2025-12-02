@@ -213,13 +213,6 @@ export default function Index() {
                 Explore some of our latest and greatest work
               </p>
             </div>
-            <Link
-              to="/projects"
-              className="flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all text-lg"
-            >
-              View All Projects
-              <ArrowRight size={24} />
-            </Link>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
