@@ -225,10 +225,12 @@ export default function Index() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
             {projects.map((project) => (
-              <Link
+              <a
                 key={project.id}
-                to={`/projects#${project.id}`}
-                className="group relative rounded-2xl overflow-hidden border border-border hover:border-primary/50 transition-all hover:shadow-xl hover:shadow-primary/20"
+                href={project.link}
+                target={project.link.startsWith("http") ? "_blank" : undefined}
+                rel={project.link.startsWith("http") ? "noopener noreferrer" : undefined}
+                className="group relative rounded-2xl overflow-hidden border border-border hover:border-primary/50 transition-all hover:shadow-xl hover:shadow-primary/20 block"
               >
                 <div className="relative overflow-hidden bg-slate-200 dark:bg-slate-800 h-64">
                   <img
@@ -254,7 +256,7 @@ export default function Index() {
                     <ArrowRight size={16} />
                   </div>
                 </div>
-              </Link>
+              </a>
             ))}
           </div>
         </div>
