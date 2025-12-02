@@ -83,9 +83,20 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Social */}
+          {/* Contact & Social */}
           <div>
-            <h4 className="font-semibold mb-4">Connect</h4>
+            <h4 className="font-semibold mb-4">Get In Touch</h4>
+            <div className="space-y-3 mb-4">
+              <p className="text-gray-400 text-sm flex items-center gap-2">
+                <span>📞</span>
+                <a
+                  href="tel:+918521080076"
+                  className="hover:text-primary transition-colors"
+                >
+                  +91 8521080076
+                </a>
+              </p>
+            </div>
             <div className="flex gap-4">
               <a
                 href="#"
