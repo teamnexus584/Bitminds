@@ -60,21 +60,23 @@ const services = [
 const projects = [
   {
     id: 1,
-    title: "E-Commerce Platform",
+    title: "Surbhi IP Studio",
     category: "Web Development",
     description:
-      "A modern e-commerce solution with real-time inventory management",
+      "Professional portfolio and services website for creative studio",
     image:
       "https://images.unsplash.com/photo-1460925895917-adf4e565db18?w=500&h=300&fit=crop",
+    link: "https://surbhiipstudio.com",
   },
   {
     id: 2,
-    title: "Mobile Banking App",
+    title: "Portfolio Android App",
     category: "App Development",
     description:
-      "Secure banking app with advanced financial management features",
+      "Beautiful Android portfolio app showcasing projects and achievements",
     image:
       "https://images.unsplash.com/photo-1563986768609-322d6d3d3180?w=500&h=300&fit=crop",
+    link: "https://porfoli-android.vercel.app/",
   },
   {
     id: 3,
@@ -83,6 +85,7 @@ const projects = [
     description: "Comprehensive analytics dashboard for enterprise clients",
     image:
       "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&h=300&fit=crop",
+    link: "#",
   },
 ];
 
