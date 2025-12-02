@@ -121,13 +121,6 @@ export default function Index() {
               <button className="px-8 py-4 bg-primary text-primary-foreground rounded-lg font-semibold hover:bg-primary/90 transition-all transform hover:scale-105 shadow-lg">
                 Start Your Project
               </button>
-              <Link
-                to="/projects"
-                className="px-8 py-4 border-2 border-primary text-primary rounded-lg font-semibold hover:bg-primary/5 transition-all flex items-center justify-center gap-2"
-              >
-                View Our Work
-                <ArrowRight size={20} />
-              </Link>
             </div>
 
             <div className="grid grid-cols-3 gap-8 max-w-2xl mx-auto text-center">
