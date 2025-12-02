@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { ArrowRight, Github, ExternalLink } from "lucide-react";
@@ -78,20 +77,7 @@ const allProjects = [
   },
 ];
 
-const categories = [
-  "All Projects",
-  "Web Development",
-  "App Development",
-  "UI/UX Design",
-];
-
 export default function Projects() {
-  const [selectedCategory, setSelectedCategory] = useState("All Projects");
-
-  const filteredProjects =
-    selectedCategory === "All Projects"
-      ? allProjects
-      : allProjects.filter((p) => p.category === selectedCategory);
 
   return (
     <div className="min-h-screen bg-white dark:bg-slate-950">
@@ -110,32 +96,12 @@ export default function Projects() {
         </div>
       </section>
 
-      {/* Filter Section */}
-      <section className="py-12 border-b border-border">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-wrap gap-3 justify-center">
-            {categories.map((category) => (
-              <button
-                key={category}
-                onClick={() => setSelectedCategory(category)}
-                className={`px-6 py-2 rounded-full font-semibold transition-all ${
-                  selectedCategory === category
-                    ? "bg-primary text-primary-foreground shadow-lg"
-                    : "bg-white dark:bg-slate-900 text-foreground border border-border hover:border-primary hover:text-primary"
-                }`}
-              >
-                {category}
-              </button>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Projects Grid */}
       <section className="py-20 md:py-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {filteredProjects.map((project) => (
+            {allProjects.map((project) => (
               <div
                 key={project.id}
                 className="group rounded-2xl overflow-hidden border border-border hover:border-primary/50 transition-all hover:shadow-xl hover:shadow-primary/20 flex flex-col h-full"
