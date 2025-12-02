@@ -21,9 +21,9 @@ export default function Header() {
             className="flex items-center gap-2 font-bold text-xl text-primary hover:text-primary/80 transition-colors"
           >
             <div className="w-8 h-8 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center text-white text-sm font-mono">
-              BM
+              8B
             </div>
-            <span>Bitminds</span>
+            <span>8bitdevelopers</span>
           </Link>
 
           {/* Desktop Navigation */}
