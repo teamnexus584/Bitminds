@@ -10,9 +10,9 @@ export default function Footer() {
           <div className="col-span-1 md:col-span-1">
             <div className="flex items-center gap-2 mb-4">
               <div className="w-8 h-8 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center text-white text-sm font-mono">
-                BM
+                8B
               </div>
-              <span className="font-bold text-lg">Bitminds</span>
+              <span className="font-bold text-lg">8bitdevelopers</span>
             </div>
             <p className="text-gray-400 text-sm">
               Transform your ideas into powerful digital solutions with modern
