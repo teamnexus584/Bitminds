@@ -96,6 +96,11 @@ const projects = [
 ];
 
 export default function Index() {
+  const handleWebFormRedirect = () => {
+    // TODO: Replace with actual web3form URL
+    window.location.href = "https://web3forms.com/form/XXXXXXXX";
+  };
+
   return (
     <div className="min-h-screen bg-white dark:bg-slate-950">
       <Header />
@@ -127,8 +132,17 @@ export default function Index() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-              <button className="px-8 py-4 bg-primary text-primary-foreground rounded-lg font-semibold hover:bg-primary/90 transition-all transform hover:scale-105 shadow-lg">
+              <button
+                onClick={handleWebFormRedirect}
+                className="px-8 py-4 bg-primary text-primary-foreground rounded-lg font-semibold hover:bg-primary/90 transition-all transform hover:scale-105 shadow-lg"
+              >
                 Start Your Project
+              </button>
+              <button
+                onClick={handleWebFormRedirect}
+                className="px-8 py-4 bg-secondary text-secondary-foreground rounded-lg font-semibold hover:bg-secondary/90 transition-all transform hover:scale-105 shadow-lg"
+              >
+                Get Started
               </button>
             </div>
 
