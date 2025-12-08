@@ -223,15 +223,18 @@ export default function Index() {
       </section>
 
       {/* Featured Projects Section */}
-      <section className="py-20 md:py-32 bg-white dark:bg-slate-950">
+      <section className="py-20 md:py-32 bg-gradient-to-b from-slate-50 to-white dark:from-slate-900 dark:to-slate-950">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row items-center justify-between gap-8 mb-16">
             <div>
+              <div className="inline-block mb-4 px-4 py-2 rounded-full bg-accent/10 text-accent font-semibold text-sm">
+                🚀 Our Latest Work
+              </div>
               <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4">
                 Featured Projects
               </h2>
-              <p className="text-lg text-muted-foreground">
-                Explore some of our latest and greatest work
+              <p className="text-lg text-muted-foreground max-w-2xl">
+                Explore some of our latest and greatest work showcasing innovative solutions and cutting-edge technologies
               </p>
             </div>
           </div>
