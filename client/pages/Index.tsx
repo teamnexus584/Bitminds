@@ -167,19 +167,37 @@ export default function Index() {
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto mt-12 pt-12 border-t border-border">
               <div className="text-center">
-                <img src="https://images.unsplash.com/photo-1633356122544-f134324ef6db?w=150&h=150&fit=crop" alt="React" className="w-20 h-20 mx-auto rounded-lg mb-2 object-cover" />
+                <img
+                  src="https://images.unsplash.com/photo-1633356122544-f134324ef6db?w=150&h=150&fit=crop"
+                  alt="React"
+                  className="w-20 h-20 mx-auto rounded-lg mb-2 object-cover"
+                />
                 <p className="text-sm font-semibold text-foreground">React</p>
               </div>
               <div className="text-center">
-                <img src="https://images.unsplash.com/photo-1633356122544-f134324ef6db?w=150&h=150&fit=crop" alt="TypeScript" className="w-20 h-20 mx-auto rounded-lg mb-2 object-cover" />
-                <p className="text-sm font-semibold text-foreground">TypeScript</p>
+                <img
+                  src="https://images.unsplash.com/photo-1633356122544-f134324ef6db?w=150&h=150&fit=crop"
+                  alt="TypeScript"
+                  className="w-20 h-20 mx-auto rounded-lg mb-2 object-cover"
+                />
+                <p className="text-sm font-semibold text-foreground">
+                  TypeScript
+                </p>
               </div>
               <div className="text-center">
-                <img src="https://images.unsplash.com/photo-1633356122544-f134324ef6db?w=150&h=150&fit=crop" alt="Node.js" className="w-20 h-20 mx-auto rounded-lg mb-2 object-cover" />
+                <img
+                  src="https://images.unsplash.com/photo-1633356122544-f134324ef6db?w=150&h=150&fit=crop"
+                  alt="Node.js"
+                  className="w-20 h-20 mx-auto rounded-lg mb-2 object-cover"
+                />
                 <p className="text-sm font-semibold text-foreground">Node.js</p>
               </div>
               <div className="text-center">
-                <img src="https://images.unsplash.com/photo-1633356122544-f134324ef6db?w=150&h=150&fit=crop" alt="Cloud" className="w-20 h-20 mx-auto rounded-lg mb-2 object-cover" />
+                <img
+                  src="https://images.unsplash.com/photo-1633356122544-f134324ef6db?w=150&h=150&fit=crop"
+                  alt="Cloud"
+                  className="w-20 h-20 mx-auto rounded-lg mb-2 object-cover"
+                />
                 <p className="text-sm font-semibold text-foreground">Cloud</p>
               </div>
             </div>
@@ -249,62 +267,95 @@ export default function Index() {
               Cutting-Edge Technologies
             </h2>
             <p className="text-lg text-muted-foreground">
-              We leverage the latest and most powerful tools to build exceptional digital experiences
+              We leverage the latest and most powerful tools to build
+              exceptional digital experiences
             </p>
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
             <div className="group relative rounded-xl overflow-hidden bg-white dark:bg-slate-800 border border-border hover:border-primary/50 transition-all hover:shadow-lg h-48">
-              <img src="https://images.unsplash.com/photo-1516321318423-f06f70674e90?w=400&h=300&fit=crop" alt="Web Development" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+              <img
+                src="https://images.unsplash.com/photo-1516321318423-f06f70674e90?w=400&h=300&fit=crop"
+                alt="Web Development"
+                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+              />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-4">
                 <p className="text-white font-semibold">Web Development</p>
               </div>
             </div>
 
             <div className="group relative rounded-xl overflow-hidden bg-white dark:bg-slate-800 border border-border hover:border-primary/50 transition-all hover:shadow-lg h-48">
-              <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400&h=300&fit=crop" alt="Mobile Apps" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+              <img
+                src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400&h=300&fit=crop"
+                alt="Mobile Apps"
+                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+              />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-4">
                 <p className="text-white font-semibold">Mobile Apps</p>
               </div>
             </div>
 
             <div className="group relative rounded-xl overflow-hidden bg-white dark:bg-slate-800 border border-border hover:border-primary/50 transition-all hover:shadow-lg h-48">
-              <img src="https://images.unsplash.com/photo-1633356122544-f134324ef6db?w=400&h=300&fit=crop" alt="Cloud Solutions" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+              <img
+                src="https://images.unsplash.com/photo-1633356122544-f134324ef6db?w=400&h=300&fit=crop"
+                alt="Cloud Solutions"
+                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+              />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-4">
                 <p className="text-white font-semibold">Cloud Solutions</p>
               </div>
             </div>
 
             <div className="group relative rounded-xl overflow-hidden bg-white dark:bg-slate-800 border border-border hover:border-primary/50 transition-all hover:shadow-lg h-48">
-              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop" alt="Analytics" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+              <img
+                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop"
+                alt="Analytics"
+                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+              />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-4">
                 <p className="text-white font-semibold">Analytics</p>
               </div>
             </div>
 
             <div className="group relative rounded-xl overflow-hidden bg-white dark:bg-slate-800 border border-border hover:border-primary/50 transition-all hover:shadow-lg h-48">
-              <img src="https://images.unsplash.com/photo-1460925895917-adf4e565db18?w=400&h=300&fit=crop" alt="UI/UX Design" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+              <img
+                src="https://images.unsplash.com/photo-1460925895917-adf4e565db18?w=400&h=300&fit=crop"
+                alt="UI/UX Design"
+                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+              />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-4">
                 <p className="text-white font-semibold">UI/UX Design</p>
               </div>
             </div>
 
             <div className="group relative rounded-xl overflow-hidden bg-white dark:bg-slate-800 border border-border hover:border-primary/50 transition-all hover:shadow-lg h-48">
-              <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=400&h=300&fit=crop" alt="DevOps" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+              <img
+                src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=400&h=300&fit=crop"
+                alt="DevOps"
+                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+              />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-4">
                 <p className="text-white font-semibold">DevOps</p>
               </div>
             </div>
 
             <div className="group relative rounded-xl overflow-hidden bg-white dark:bg-slate-800 border border-border hover:border-primary/50 transition-all hover:shadow-lg h-48">
-              <img src="https://images.unsplash.com/photo-1554224311-beee415c15c9?w=400&h=300&fit=crop" alt="AI/ML" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+              <img
+                src="https://images.unsplash.com/photo-1554224311-beee415c15c9?w=400&h=300&fit=crop"
+                alt="AI/ML"
+                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+              />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-4">
                 <p className="text-white font-semibold">AI/ML Solutions</p>
               </div>
             </div>
 
             <div className="group relative rounded-xl overflow-hidden bg-white dark:bg-slate-800 border border-border hover:border-primary/50 transition-all hover:shadow-lg h-48">
-              <img src="https://images.unsplash.com/photo-1563986768609-322d6d3d3180?w=400&h=300&fit=crop" alt="Security" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+              <img
+                src="https://images.unsplash.com/photo-1563986768609-322d6d3d3180?w=400&h=300&fit=crop"
+                alt="Security"
+                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+              />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-4">
                 <p className="text-white font-semibold">Security</p>
               </div>
@@ -325,7 +376,8 @@ export default function Index() {
                 Featured Projects
               </h2>
               <p className="text-lg text-muted-foreground max-w-2xl">
-                Explore some of our latest and greatest work showcasing innovative solutions and cutting-edge technologies
+                Explore some of our latest and greatest work showcasing
+                innovative solutions and cutting-edge technologies
               </p>
             </div>
           </div>
