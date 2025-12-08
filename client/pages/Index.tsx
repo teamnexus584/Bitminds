@@ -300,7 +300,10 @@ export default function Index() {
             Let's discuss your project and create something amazing together.
             Our team is ready to bring your vision to life.
           </p>
-          <button className="px-8 py-4 bg-white text-primary rounded-lg font-semibold hover:bg-slate-50 transition-all transform hover:scale-105 shadow-lg inline-flex items-center gap-2">
+          <button
+            onClick={handleWebFormRedirect}
+            className="px-8 py-4 bg-white text-primary rounded-lg font-semibold hover:bg-slate-50 transition-all transform hover:scale-105 shadow-lg inline-flex items-center gap-2"
+          >
             Start Your Journey
             <ArrowRight size={20} />
           </button>
