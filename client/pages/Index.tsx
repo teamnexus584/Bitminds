@@ -146,7 +146,7 @@ export default function Index() {
               </button>
             </div>
 
-            <div className="grid grid-cols-3 gap-8 max-w-2xl mx-auto text-center">
+            <div className="grid grid-cols-3 gap-8 max-w-2xl mx-auto text-center mb-12">
               <div>
                 <p className="text-3xl font-bold text-primary">50+</p>
                 <p className="text-sm text-muted-foreground">
@@ -162,6 +162,25 @@ export default function Index() {
                 <p className="text-sm text-muted-foreground">
                   Years Experience
                 </p>
+              </div>
+            </div>
+
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto mt-12 pt-12 border-t border-border">
+              <div className="text-center">
+                <img src="https://images.unsplash.com/photo-1633356122544-f134324ef6db?w=150&h=150&fit=crop" alt="React" className="w-20 h-20 mx-auto rounded-lg mb-2 object-cover" />
+                <p className="text-sm font-semibold text-foreground">React</p>
+              </div>
+              <div className="text-center">
+                <img src="https://images.unsplash.com/photo-1633356122544-f134324ef6db?w=150&h=150&fit=crop" alt="TypeScript" className="w-20 h-20 mx-auto rounded-lg mb-2 object-cover" />
+                <p className="text-sm font-semibold text-foreground">TypeScript</p>
+              </div>
+              <div className="text-center">
+                <img src="https://images.unsplash.com/photo-1633356122544-f134324ef6db?w=150&h=150&fit=crop" alt="Node.js" className="w-20 h-20 mx-auto rounded-lg mb-2 object-cover" />
+                <p className="text-sm font-semibold text-foreground">Node.js</p>
+              </div>
+              <div className="text-center">
+                <img src="https://images.unsplash.com/photo-1633356122544-f134324ef6db?w=150&h=150&fit=crop" alt="Cloud" className="w-20 h-20 mx-auto rounded-lg mb-2 object-cover" />
+                <p className="text-sm font-semibold text-foreground">Cloud</p>
               </div>
             </div>
           </div>
