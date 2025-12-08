@@ -81,7 +81,7 @@ const projects = [
     description:
       "Beautiful Android portfolio app showcasing projects and achievements",
     image:
-      "https://images.unsplash.com/photo-1563986768609-322d6d3d3180?w=500&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500&h=300&fit=crop",
     link: "https://porfoli-android.vercel.app/",
   },
   {
