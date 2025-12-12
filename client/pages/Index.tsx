@@ -70,7 +70,7 @@ const projects = [
     category: "Web Development",
     description:
       "Professional portfolio and services website for creative studio",
-    image: "/assests/surbhi.png",
+    image: "/surbhi.png",
     link: "https://surbhiipstudio.com",
   },
   {
@@ -89,7 +89,7 @@ const projects = [
     category: "Web Development",
     description:
       "Modern technology solutions and digital transformation services",
-    image: "/assests/hyper.png",
+    image: "/hyper.png",
     link: "https://hyperlontech.com",
   },
 ];
@@ -173,7 +173,7 @@ export default function Index() {
                 <div className="flex flex-wrap gap-4">
                   <div className="flex items-center gap-2 group">
                     <img
-                      src="/assests/React - Copy.png"
+                      src="/React - Copy.png"
                       alt="React"
                       className="w-8 h-8 rounded group-hover:scale-110 transition-transform"
                     />
@@ -181,7 +181,7 @@ export default function Index() {
                   </div>
                   <div className="flex items-center gap-2 group">
                     <img
-                      src="/assests/TypeScript.png"
+                      src="/TypeScript.png"
                       alt="TypeScript"
                       className="w-8 h-8 rounded group-hover:scale-110 transition-transform"
                     />
@@ -189,7 +189,7 @@ export default function Index() {
                   </div>
                   <div className="flex items-center gap-2 group">
                     <img
-                      src="/assests/Node.js.png"
+                      src="/Node.js.png"
                       alt="Node.js"
                       className="w-8 h-8 rounded group-hover:scale-110 transition-transform"
                     />
@@ -197,7 +197,7 @@ export default function Index() {
                   </div>
                   <div className="flex items-center gap-2 group">
                     <img
-                      src="/assests/Cloudflare.png"
+                      src="/Cloudflare.png"
                       alt="Cloud"
                       className="w-8 h-8 rounded group-hover:scale-110 transition-transform"
                     />
@@ -309,7 +309,7 @@ export default function Index() {
             <div className="grid grid-cols-2 gap-4 md:gap-6">
               <div className="group relative rounded-xl overflow-hidden bg-white dark:bg-slate-800 border border-border hover:border-primary/50 transition-all hover:shadow-lg h-48 hover-lift glow-border">
                 <img
-                  src="/assests/React - Copy.png"
+                  src="/React - Copy.png"
                   alt="React"
                   className="w-full h-full object-contain p-4 group-hover:scale-110 group-hover:rotate-3 transition-all duration-500"
                 />
@@ -320,7 +320,7 @@ export default function Index() {
 
               <div className="group relative rounded-xl overflow-hidden bg-white dark:bg-slate-800 border border-border hover:border-primary/50 transition-all hover:shadow-lg h-48 hover-lift glow-border">
                 <img
-                  src="/assests/TypeScript.png"
+                  src="/TypeScript.png"
                   alt="TypeScript"
                   className="w-full h-full object-contain p-4 group-hover:scale-110 group-hover:rotate-3 transition-all duration-500"
                 />
@@ -331,7 +331,7 @@ export default function Index() {
 
               <div className="group relative rounded-xl overflow-hidden bg-white dark:bg-slate-800 border border-border hover:border-primary/50 transition-all hover:shadow-lg h-48 hover-lift glow-border">
                 <img
-                  src="/assests/Node.js.png"
+                  src="/Node.js.png"
                   alt="Node.js"
                   className="w-full h-full object-contain p-4 group-hover:scale-110 group-hover:rotate-3 transition-all duration-500"
                 />
@@ -342,7 +342,7 @@ export default function Index() {
 
               <div className="group relative rounded-xl overflow-hidden bg-white dark:bg-slate-800 border border-border hover:border-primary/50 transition-all hover:shadow-lg h-48 hover-lift glow-border">
                 <img
-                  src="/assests/Cloudflare.png"
+                  src="/Cloudflare.png"
                   alt="Cloudflare"
                   className="w-full h-full object-contain p-4 group-hover:scale-110 group-hover:rotate-3 transition-all duration-500"
                 />
