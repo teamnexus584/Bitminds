@@ -5,7 +5,7 @@ import { createServer } from "./server";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode, command }) => ({
-  base: '/Bitminds/',
+  base: '/',
   server: {
     host: "::",
     port: 8080,
