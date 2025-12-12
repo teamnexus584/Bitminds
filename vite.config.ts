@@ -5,6 +5,7 @@ import { createServer } from "./server";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+  base: mode === 'production' ? '/Bitminds/' : '/',
   server: {
     host: "::",
     port: 8080,
@@ -16,7 +17,7 @@ export default defineConfig(({ mode }) => ({
   build: {
     outDir: "dist/spa",
   },
-  plugins: [react(), expressPlugin()],
+  plugins: [react(), mode === 'development' ? expressPlugin() : null].filter(Boolean),
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./client"),
