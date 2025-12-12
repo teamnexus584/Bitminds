@@ -24,7 +24,7 @@ jobs:
       run: npm ci
       
     - name: Build
-      run: npm run build:github-pages
+      run: NODE_ENV=production npm run build:github-pages
       
     - name: Setup Pages
       uses: actions/configure-pages@v4
