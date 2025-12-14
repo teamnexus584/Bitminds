@@ -24,6 +24,7 @@ export default function Header() {
   const navLinks = [
     { href: "/", label: "Home", type: "link" },
     { href: "#services", label: "Services", type: "scroll", onClick: handleServicesClick },
+    { href: "/pricing", label: "Pricing", type: "link" },
     { href: "#contact", label: "Contact", type: "scroll", onClick: handleContactClick },
   ];
 

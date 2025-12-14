@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Linkedin, Mail, Smartphone } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -36,6 +36,11 @@ export default function Footer() {
                 >
                   Services
                 </a>
+              </li>
+              <li>
+                <Link to="/pricing" className="hover:text-primary transition-colors">
+                  Pricing
+                </Link>
               </li>
               <li>
                 <a
@@ -138,22 +143,36 @@ export default function Footer() {
                   +91 8521080076
                 </a>
               </p>
+              <p className="text-gray-400 text-sm flex items-center gap-2">
+                <span>📧</span>
+                <a
+                  href="mailto:admin@8bitsdev.click"
+                  className="hover:text-primary transition-colors"
+                >
+                  admin@8bitsdev.click
+                </a>
+              </p>
             </div>
             <div className="flex gap-4">
               <a
-                href="#"
+                href="https://play.google.com/store/apps/details?id=com.remit.alumni"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 bg-white/10 hover:bg-primary rounded-lg flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-lg"
+                title="Our App on Play Store"
               >
-                <Github size={20} />
+                <Smartphone size={20} />
               </a>
               <a
-                href="#"
+                href="https://www.linkedin.com/in/8bit-devs-484ab0398/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 bg-white/10 hover:bg-primary rounded-lg flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-lg"
               >
                 <Linkedin size={20} />
               </a>
               <a
-                href="#"
+                href="mailto:admin@8bitsdev.click"
                 className="w-10 h-10 bg-white/10 hover:bg-primary rounded-lg flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-lg"
               >
                 <Mail size={20} />

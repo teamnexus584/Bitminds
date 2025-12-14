@@ -1,7 +1,9 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Hero3D from "@/components/Hero3D";
+import ContactModal from "@/components/ContactModal";
 import {
   Code2,
   Smartphone,
@@ -75,13 +77,13 @@ const projects = [
   },
   {
     id: 2,
-    title: "Portfolio Android App",
+    title: "Alumni Connect App",
     category: "App Development",
     description:
-      "Beautiful Android portfolio app showcasing projects and achievements",
+      "Professional alumni networking app with advanced features",
     image:
       "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500&h=300&fit=crop",
-    link: "https://porfoli-android.vercel.app/",
+    link: "https://play.google.com/store/apps/details?id=com.remit.alumni",
   },
   {
     id: 3,
@@ -95,12 +97,10 @@ const projects = [
 ];
 
 export default function Index() {
-  const handleContactRedirect = () => {
-    // Scroll to footer contact form
-    const footer = document.querySelector('footer');
-    if (footer) {
-      footer.scrollIntoView({ behavior: 'smooth' });
-    }
+  const [isContactModalOpen, setIsContactModalOpen] = useState(false);
+
+  const handleContactClick = () => {
+    setIsContactModalOpen(true);
   };
 
   return (
@@ -134,7 +134,7 @@ export default function Index() {
 
               <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up animation-delay-400">
                 <button
-                  onClick={handleContactRedirect}
+                  onClick={handleContactClick}
                   className="px-8 py-4 bg-secondary text-secondary-foreground rounded-lg font-semibold hover:bg-secondary/90 transition-all transform hover:scale-105 shadow-lg hover:shadow-2xl animate-pulse-slow"
                 >
                   Get Started
@@ -424,6 +424,72 @@ export default function Index() {
         </div>
       </section>
 
+      {/* Pricing Preview Section */}
+      <section className="py-20 md:py-32 bg-white dark:bg-slate-950">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <div className="inline-block mb-4 px-4 py-2 rounded-full bg-primary/10 text-primary font-semibold text-sm">
+              💰 Transparent Pricing
+            </div>
+            <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4">
+              Affordable Solutions for Everyone
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Quality development services at competitive prices with no hidden costs
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="bg-slate-50 dark:bg-slate-900 rounded-xl p-6 text-center hover:shadow-lg transition-all">
+              <div className="text-3xl font-bold text-primary mb-2">₹4,499</div>
+              <div className="text-lg font-semibold text-foreground mb-2">Static Website</div>
+              <div className="text-sm text-muted-foreground mb-4">8 Pages • Responsive • SEO Ready</div>
+              <div className="text-xs text-muted-foreground">Perfect for: Lawyers, Doctors, Restaurants</div>
+            </div>
+
+            <div className="bg-slate-50 dark:bg-slate-900 rounded-xl p-6 text-center hover:shadow-lg transition-all">
+              <div className="text-3xl font-bold text-green-600 mb-2">₹7,999</div>
+              <div className="text-lg font-semibold text-foreground mb-2">Android App</div>
+              <div className="text-sm text-muted-foreground mb-2">8 Screens • Backend • Play Store Ready</div>
+              <div className="text-xs font-bold text-green-600 mb-2">FREE Play Store Publish!</div>
+              <div className="text-xs text-muted-foreground">Perfect for: E-commerce, Booking Apps</div>
+            </div>
+
+            <div className="bg-slate-50 dark:bg-slate-900 rounded-xl p-6 text-center hover:shadow-lg transition-all">
+              <div className="text-3xl font-bold text-purple-600 mb-2">₹8,499</div>
+              <div className="text-lg font-semibold text-foreground mb-2">iOS App</div>
+              <div className="text-sm text-muted-foreground mb-2">8 Screens • Backend • App Store Ready</div>
+              <div className="text-xs text-muted-foreground">Perfect for: E-commerce, Social Apps</div>
+            </div>
+
+            <div className="bg-gradient-to-br from-primary/10 to-secondary/10 rounded-xl p-6 text-center hover:shadow-lg transition-all border-2 border-primary/20">
+              <div className="text-xs bg-primary text-white px-2 py-1 rounded-full mb-2 inline-block">BEST OFFER</div>
+              <div className="text-3xl font-bold text-primary mb-2">₹14,999</div>
+              <div className="text-lg font-semibold text-foreground mb-2">Complete Package</div>
+              <div className="text-sm text-muted-foreground mb-4">App + Website + Software</div>
+              <div className="text-xs text-muted-foreground">Complete Business Solution</div>
+            </div>
+          </div>
+
+          <div className="text-center mt-12">
+            <Link
+              to="/pricing"
+              className="px-8 py-4 bg-primary text-primary-foreground rounded-lg font-semibold hover:bg-primary/90 transition-all transform hover:scale-105 shadow-lg inline-flex items-center gap-2 mr-4"
+            >
+              View All Pricing
+              <ArrowRight size={20} />
+            </Link>
+            <button
+              onClick={handleContactClick}
+              className="px-8 py-4 border-2 border-primary text-primary rounded-lg font-semibold hover:bg-primary/5 transition-all transform hover:scale-105 inline-flex items-center gap-2"
+            >
+              Get Custom Quote
+              <ArrowRight size={20} />
+            </button>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section
         id="contact"
@@ -443,16 +509,21 @@ export default function Index() {
             Our team is ready to bring your vision to life.
           </p>
           <button
-            onClick={handleContactRedirect}
+            onClick={handleContactClick}
             className="px-8 py-4 bg-white text-primary rounded-lg font-semibold hover:bg-slate-50 transition-all transform hover:scale-105 shadow-lg inline-flex items-center gap-2"
           >
-            Start Your Journey
+            Contact Us Now
             <ArrowRight size={20} />
           </button>
         </div>
       </section>
 
       <Footer />
+      
+      <ContactModal 
+        isOpen={isContactModalOpen} 
+        onClose={() => setIsContactModalOpen(false)} 
+      />
     </div>
   );
 }
