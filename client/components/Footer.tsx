@@ -181,9 +181,26 @@ export default function Footer() {
           </div>
         </div>
 
+        {/* Team Information */}
+        <div className="border-t border-white/10 pt-8 mb-6">
+          <div className="text-center mb-4">
+            <h4 className="font-semibold text-white mb-3">Leadership Team</h4>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-2xl mx-auto">
+              <div className="text-center">
+                <p className="text-sm font-semibold text-primary">CFO (Chief Financial Officer)</p>
+                <p className="text-sm text-gray-300">Atul Raj</p>
+              </div>
+              <div className="text-center">
+                <p className="text-sm font-semibold text-secondary">CMO (Chief Marketing Officer)</p>
+                <p className="text-sm text-gray-300">Aaditya Kumar Jha</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* Bottom */}
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-gray-400 text-sm">
-          <p>&copy; 2024 8bitdev. All rights reserved.</p>
+          <p>&copy; 2025 8bitdev. All rights reserved.</p>
           <div className="flex gap-6">
             <a href="#" className="hover:text-primary transition-colors">
               Privacy Policy
