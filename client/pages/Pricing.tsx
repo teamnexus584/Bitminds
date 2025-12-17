@@ -3,9 +3,31 @@ import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ContactModal from "@/components/ContactModal";
+import Countdown from "@/components/Countdown";
 import { Check, Star, ArrowRight, Smartphone, Globe, Monitor, Package } from "lucide-react";
 
 const pricingPlans = [
+  {
+    id: "free",
+    name: "Free Website",
+    price: "FREE",
+    originalPrice: "₹2,999",
+    description: "Limited time offer - Perfect for getting started",
+    features: [
+      "2 Professional Pages",
+      "Responsive Design",
+      "Mobile Optimized",
+      "Basic Contact Form",
+      "SEO Ready",
+      "Fast Loading",
+      "3 Months Support",
+      "Limited Time Only"
+    ],
+    examples: "Personal Portfolio, Small Business Landing",
+    icon: Globe,
+    color: "from-green-500 to-emerald-500",
+    popular: false
+  },
   {
     id: "website",
     name: "Static Website",
@@ -113,10 +135,17 @@ export default function Pricing() {
       {/* Hero Section */}
       <section className="py-20 md:py-32 bg-gradient-to-b from-white to-slate-50 dark:from-slate-950 dark:to-slate-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="inline-block mb-6">
-            <span className="px-4 py-2 rounded-full bg-primary/10 text-primary font-semibold text-sm">
-              💰 Transparent Pricing
-            </span>
+          <div className="text-center mb-8">
+            <div className="mb-3">
+              <span className="px-6 py-3 rounded-full bg-green-100 text-green-700 font-bold text-sm border-2 border-green-300 animate-pulse">
+                🎉 LIMITED TIME: FREE 2-Page Website!
+              </span>
+            </div>
+            <div>
+              <span className="px-4 py-2 rounded-full bg-primary/10 text-primary font-semibold text-sm">
+                💰 Transparent Pricing
+              </span>
+            </div>
           </div>
           
           <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6">
@@ -169,6 +198,14 @@ export default function Pricing() {
                         <Star size={16} className="fill-current" />
                         Most Popular
                       </span>
+                    </div>
+                  )}
+                  
+                  {plan.id === 'free' && (
+                    <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 w-full px-2">
+                      <div className="bg-red-50 border border-red-200 rounded-lg p-2">
+                        <Countdown className="justify-center" />
+                      </div>
                     </div>
                   )}
 

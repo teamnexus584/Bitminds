@@ -121,6 +121,7 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
                   className="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent bg-background text-foreground"
                 >
                   <option value="">Select a service</option>
+                  <option value="free">🎉 FREE Website - 2 Pages (Limited Time)</option>
                   <option value="website">Static Website (₹4,499)</option>
                   <option value="android">Android App (₹7,999)</option>
                   <option value="ios">iOS App (₹8,499)</option>
@@ -143,6 +144,15 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
                 ></textarea>
               </div>
 
+              <div className="bg-green-50 border border-green-200 rounded-lg p-4 mb-4">
+                <p className="text-sm text-green-700 font-semibold mb-1">
+                  🎉 LIMITED TIME OFFER!
+                </p>
+                <p className="text-xs text-green-600">
+                  **FREE 2-Page Website** - Professional design, mobile responsive, SEO ready!
+                </p>
+              </div>
+              
               <div className="bg-primary/5 border border-primary/20 rounded-lg p-4">
                 <p className="text-sm text-primary font-semibold mb-1">
                   🎉 Special Offer for Android Apps!

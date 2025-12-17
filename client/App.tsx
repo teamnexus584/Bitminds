@@ -13,6 +13,12 @@ import UIUXDesign from "./pages/services/UIUXDesign";
 import Consulting from "./pages/services/Consulting";
 import Performance from "./pages/services/Performance";
 import GrowthStrategy from "./pages/services/GrowthStrategy";
+import Database from "./pages/services/Database";
+import Security from "./pages/services/Security";
+import Cloud from "./pages/services/Cloud";
+import AiMl from "./pages/services/AiMl";
+import Ecommerce from "./pages/services/Ecommerce";
+import Enterprise from "./pages/services/Enterprise";
 
 const queryClient = new QueryClient();
 
@@ -42,6 +48,12 @@ export default function App() {
               path="/services/growth-strategy"
               element={<GrowthStrategy />}
             />
+            <Route path="/services/database" element={<Database />} />
+            <Route path="/services/security" element={<Security />} />
+            <Route path="/services/cloud" element={<Cloud />} />
+            <Route path="/services/ai-ml" element={<AiMl />} />
+            <Route path="/services/ecommerce" element={<Ecommerce />} />
+            <Route path="/services/enterprise" element={<Enterprise />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

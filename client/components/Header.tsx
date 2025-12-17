@@ -37,9 +37,11 @@ export default function Header() {
             to="/"
             className="flex items-center gap-2 font-bold text-xl text-primary hover:text-primary/80 transition-colors"
           >
-            <div className="w-8 h-8 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center text-white text-sm font-mono">
-              8B
-            </div>
+            <img 
+              src="/8bit.png" 
+              alt="8bitdev" 
+              className="w-8 h-8 rounded-lg"
+            />
             <span>8bitdev</span>
           </Link>
 

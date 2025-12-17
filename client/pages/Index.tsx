@@ -2,8 +2,8 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import Hero3D from "@/components/Hero3D";
 import ContactModal from "@/components/ContactModal";
+import Countdown from "@/components/Countdown";
 import {
   Code2,
   Smartphone,
@@ -12,6 +12,12 @@ import {
   Users,
   TrendingUp,
   ArrowRight,
+  Database,
+  Shield,
+  Cloud,
+  Bot,
+  ShoppingCart,
+  Briefcase,
 } from "lucide-react";
 
 const services = [
@@ -41,7 +47,7 @@ const services = [
   },
   {
     icon: Zap,
-    title: "Performance",
+    title: "Performance Optimization",
     description:
       "Optimize your digital products for speed and efficiency. Lightning-fast load times and smooth interactions are our standard.",
     color: "from-yellow-500 to-orange-500",
@@ -49,7 +55,7 @@ const services = [
   },
   {
     icon: Users,
-    title: "Consulting",
+    title: "IT Consulting",
     description:
       "Get expert guidance on your technology roadmap. We help you make informed decisions for your digital transformation journey.",
     color: "from-green-500 to-teal-500",
@@ -62,6 +68,54 @@ const services = [
       "Scale your product strategically. Data-driven insights and proven methodologies to accelerate your business growth.",
     color: "from-indigo-500 to-blue-500",
     link: "/services/growth-strategy",
+  },
+  {
+    icon: Database,
+    title: "Database Solutions",
+    description:
+      "Design and implement robust database architectures. From SQL to NoSQL, we ensure your data is secure, scalable, and optimized.",
+    color: "from-emerald-500 to-green-500",
+    link: "/services/database",
+  },
+  {
+    icon: Shield,
+    title: "Cybersecurity",
+    description:
+      "Protect your digital assets with comprehensive security solutions. Vulnerability assessments, penetration testing, and security audits.",
+    color: "from-red-500 to-rose-500",
+    link: "/services/security",
+  },
+  {
+    icon: Cloud,
+    title: "Cloud Migration",
+    description:
+      "Seamlessly migrate your infrastructure to the cloud. AWS, Azure, and Google Cloud expertise for scalable, cost-effective solutions.",
+    color: "from-sky-500 to-blue-500",
+    link: "/services/cloud",
+  },
+  {
+    icon: Bot,
+    title: "AI & Machine Learning",
+    description:
+      "Integrate intelligent automation and ML models into your business processes. Chatbots, predictive analytics, and AI-powered solutions.",
+    color: "from-violet-500 to-purple-500",
+    link: "/services/ai-ml",
+  },
+  {
+    icon: ShoppingCart,
+    title: "E-commerce Solutions",
+    description:
+      "Build powerful online stores that convert visitors into customers. Custom e-commerce platforms with payment integration and inventory management.",
+    color: "from-pink-500 to-rose-500",
+    link: "/services/ecommerce",
+  },
+  {
+    icon: Briefcase,
+    title: "Enterprise Solutions",
+    description:
+      "Large-scale enterprise applications and system integrations. CRM, ERP, and custom business management solutions for corporations.",
+    color: "from-slate-500 to-gray-500",
+    link: "/services/enterprise",
   },
 ];
 
@@ -108,15 +162,22 @@ export default function Index() {
       <Header />
 
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16 md:pt-0">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16 md:pt-0 bg-gradient-to-br from-slate-50 via-white to-blue-50 dark:from-slate-950 dark:to-slate-900">
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left Side - Text Content */}
             <div className="space-y-8">
-              <div className="inline-block animate-bounce">
-                <span className="px-4 py-2 rounded-full bg-primary/10 text-primary font-semibold text-sm animate-pulse">
-                  ✨ Transforming Ideas into Digital Reality
-                </span>
+              <div className="text-center lg:text-left space-y-3">
+                <div className="animate-bounce">
+                  <span className="px-6 py-3 rounded-full bg-green-100 text-green-700 font-bold text-sm border-2 border-green-300 animate-pulse">
+                    🎉 LIMITED TIME: FREE 2-Page Website!
+                  </span>
+                </div>
+                <div>
+                  <span className="px-4 py-2 rounded-full bg-primary/10 text-primary font-semibold text-sm">
+                    ✨ Transforming Ideas into Digital Reality
+                  </span>
+                </div>
               </div>
 
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight animate-fade-in-up">
@@ -168,40 +229,40 @@ export default function Index() {
               </div>
 
               {/* Technology Stack */}
-              <div className="pt-8 border-t border-border animate-fade-in-up animation-delay-800">
-                <p className="text-sm text-muted-foreground mb-4">Powered by cutting-edge technologies:</p>
-                <div className="flex flex-wrap gap-4">
+              <div className="pt-6 border-t border-border animate-fade-in-up animation-delay-800">
+                <p className="text-sm text-muted-foreground mb-3">Powered by cutting-edge technologies:</p>
+                <div className="flex flex-wrap gap-3">
                   <div className="flex items-center gap-2 group">
                     <img
                       src="/React - Copy.png"
                       alt="React"
-                      className="w-8 h-8 rounded group-hover:scale-110 transition-transform"
+                      className="w-6 h-6 rounded group-hover:scale-110 transition-transform"
                     />
-                    <span className="text-sm font-medium text-foreground group-hover:text-primary transition-colors">React</span>
+                    <span className="text-xs font-medium text-foreground group-hover:text-primary transition-colors">React</span>
                   </div>
                   <div className="flex items-center gap-2 group">
                     <img
-                      src="/TypeScript.png"
-                      alt="TypeScript"
-                      className="w-8 h-8 rounded group-hover:scale-110 transition-transform"
+                      src="/Flutter.png"
+                      alt="Flutter"
+                      className="w-6 h-6 rounded group-hover:scale-110 transition-transform"
                     />
-                    <span className="text-sm font-medium text-foreground group-hover:text-primary transition-colors">TypeScript</span>
+                    <span className="text-xs font-medium text-foreground group-hover:text-primary transition-colors">Flutter</span>
                   </div>
                   <div className="flex items-center gap-2 group">
                     <img
                       src="/Node.js.png"
                       alt="Node.js"
-                      className="w-8 h-8 rounded group-hover:scale-110 transition-transform"
+                      className="w-6 h-6 rounded group-hover:scale-110 transition-transform"
                     />
-                    <span className="text-sm font-medium text-foreground group-hover:text-primary transition-colors">Node.js</span>
+                    <span className="text-xs font-medium text-foreground group-hover:text-primary transition-colors">Node.js</span>
                   </div>
                   <div className="flex items-center gap-2 group">
                     <img
-                      src="/Cloudflare.png"
-                      alt="Cloud"
-                      className="w-8 h-8 rounded group-hover:scale-110 transition-transform"
+                      src="/AWS.png"
+                      alt="AWS"
+                      className="w-6 h-6 rounded group-hover:scale-110 transition-transform"
                     />
-                    <span className="text-sm font-medium text-foreground group-hover:text-primary transition-colors">Cloud</span>
+                    <span className="text-xs font-medium text-foreground group-hover:text-primary transition-colors">AWS</span>
                   </div>
                 </div>
               </div>
@@ -225,7 +286,7 @@ export default function Index() {
       {/* Services Section */}
       <section
         id="services"
-        className="py-20 md:py-32 bg-gradient-to-b from-white to-slate-50 dark:from-slate-950 dark:to-slate-900"
+        className="py-12 md:py-20 bg-gradient-to-b from-white to-slate-50 dark:from-slate-950 dark:to-slate-900"
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
@@ -306,48 +367,70 @@ export default function Index() {
             </div>
 
             {/* Right Side - Technology Grid */}
-            <div className="grid grid-cols-2 gap-4 md:gap-6">
-              <div className="group relative rounded-xl overflow-hidden bg-white dark:bg-slate-800 border border-border hover:border-primary/50 transition-all hover:shadow-lg h-48 hover-lift glow-border">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
+              <div className="group relative rounded-xl overflow-hidden bg-white dark:bg-slate-800 border border-border hover:border-primary/50 transition-all hover:shadow-lg h-32 hover-lift glow-border">
                 <img
                   src="/React - Copy.png"
                   alt="React"
-                  className="w-full h-full object-contain p-4 group-hover:scale-110 group-hover:rotate-3 transition-all duration-500"
+                  className="w-full h-full object-contain p-3 group-hover:scale-110 group-hover:rotate-3 transition-all duration-500"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <p className="text-white font-semibold">React</p>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <p className="text-white font-semibold text-xs">React</p>
                 </div>
               </div>
 
-              <div className="group relative rounded-xl overflow-hidden bg-white dark:bg-slate-800 border border-border hover:border-primary/50 transition-all hover:shadow-lg h-48 hover-lift glow-border">
+              <div className="group relative rounded-xl overflow-hidden bg-white dark:bg-slate-800 border border-border hover:border-primary/50 transition-all hover:shadow-lg h-32 hover-lift glow-border">
                 <img
-                  src="/TypeScript.png"
-                  alt="TypeScript"
-                  className="w-full h-full object-contain p-4 group-hover:scale-110 group-hover:rotate-3 transition-all duration-500"
+                  src="/Flutter.png"
+                  alt="Flutter"
+                  className="w-full h-full object-contain p-3 group-hover:scale-110 group-hover:rotate-3 transition-all duration-500"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <p className="text-white font-semibold">TypeScript</p>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <p className="text-white font-semibold text-xs">Flutter</p>
                 </div>
               </div>
 
-              <div className="group relative rounded-xl overflow-hidden bg-white dark:bg-slate-800 border border-border hover:border-primary/50 transition-all hover:shadow-lg h-48 hover-lift glow-border">
+              <div className="group relative rounded-xl overflow-hidden bg-white dark:bg-slate-800 border border-border hover:border-primary/50 transition-all hover:shadow-lg h-32 hover-lift glow-border">
+                <img
+                  src="/Angular.png"
+                  alt="Angular"
+                  className="w-full h-full object-contain p-3 group-hover:scale-110 group-hover:rotate-3 transition-all duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <p className="text-white font-semibold text-xs">Angular</p>
+                </div>
+              </div>
+
+              <div className="group relative rounded-xl overflow-hidden bg-white dark:bg-slate-800 border border-border hover:border-primary/50 transition-all hover:shadow-lg h-32 hover-lift glow-border">
                 <img
                   src="/Node.js.png"
                   alt="Node.js"
-                  className="w-full h-full object-contain p-4 group-hover:scale-110 group-hover:rotate-3 transition-all duration-500"
+                  className="w-full h-full object-contain p-3 group-hover:scale-110 group-hover:rotate-3 transition-all duration-500"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <p className="text-white font-semibold">Node.js</p>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <p className="text-white font-semibold text-xs">Node.js</p>
                 </div>
               </div>
 
-              <div className="group relative rounded-xl overflow-hidden bg-white dark:bg-slate-800 border border-border hover:border-primary/50 transition-all hover:shadow-lg h-48 hover-lift glow-border">
+              <div className="group relative rounded-xl overflow-hidden bg-white dark:bg-slate-800 border border-border hover:border-primary/50 transition-all hover:shadow-lg h-32 hover-lift glow-border">
                 <img
-                  src="/Cloudflare.png"
-                  alt="Cloudflare"
-                  className="w-full h-full object-contain p-4 group-hover:scale-110 group-hover:rotate-3 transition-all duration-500"
+                  src="/AWS.png"
+                  alt="AWS"
+                  className="w-full h-full object-contain p-3 group-hover:scale-110 group-hover:rotate-3 transition-all duration-500"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <p className="text-white font-semibold">Cloudflare</p>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <p className="text-white font-semibold text-xs">AWS</p>
+                </div>
+              </div>
+
+              <div className="group relative rounded-xl overflow-hidden bg-white dark:bg-slate-800 border border-border hover:border-primary/50 transition-all hover:shadow-lg h-32 hover-lift glow-border">
+                <img
+                  src="/JavaScript.png"
+                  alt="JavaScript"
+                  className="w-full h-full object-contain p-3 group-hover:scale-110 group-hover:rotate-3 transition-all duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <p className="text-white font-semibold text-xs">JavaScript</p>
                 </div>
               </div>
             </div>
@@ -428,8 +511,14 @@ export default function Index() {
       <section className="py-20 md:py-32 bg-white dark:bg-slate-950">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <div className="inline-block mb-4 px-4 py-2 rounded-full bg-primary/10 text-primary font-semibold text-sm">
-              💰 Transparent Pricing
+            <div className="text-center mb-6">
+              <div className="inline-block px-6 py-3 rounded-full bg-green-100 text-green-700 font-bold text-sm border-2 border-green-300 mb-3">
+                🎉 LIMITED TIME: FREE 2-Page Website!
+              </div>
+              <br />
+              <div className="inline-block px-4 py-2 rounded-full bg-primary/10 text-primary font-semibold text-sm">
+                💰 Transparent Pricing
+              </div>
             </div>
             <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4">
               Affordable Solutions for Everyone
@@ -439,8 +528,22 @@ export default function Index() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="bg-slate-50 dark:bg-slate-900 rounded-xl p-6 text-center hover:shadow-lg transition-all">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+            <div className="bg-gradient-to-br from-green-50 to-emerald-50 dark:from-green-900/20 dark:to-emerald-900/20 rounded-xl p-6 text-center hover:shadow-lg transition-all border-2 border-green-200 dark:border-green-800 relative">
+              <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 w-full px-2">
+                <div className="bg-red-50 border border-red-200 rounded-lg p-2">
+                  <Countdown className="justify-center text-xs" />
+                </div>
+              </div>
+              <div className="mt-4">
+                <div className="text-3xl font-bold text-green-600 mb-2">FREE</div>
+                <div className="text-lg font-semibold text-foreground mb-2">2-Page Website</div>
+                <div className="text-sm text-muted-foreground mb-4">2 Pages • Responsive • SEO Ready</div>
+                <div className="text-xs text-muted-foreground">Perfect for: Personal Portfolio, Landing Page</div>
+              </div>
+            </div>
+
+            <div className="bg-slate-50 dark:bg-slate-900 rounded-xl p-6 text-center hover:shadow-lg transition-all border border-border">
               <div className="text-3xl font-bold text-primary mb-2">₹4,499</div>
               <div className="text-lg font-semibold text-foreground mb-2">Static Website</div>
               <div className="text-sm text-muted-foreground mb-4">8 Pages • Responsive • SEO Ready</div>
@@ -462,8 +565,7 @@ export default function Index() {
               <div className="text-xs text-muted-foreground">Perfect for: E-commerce, Social Apps</div>
             </div>
 
-            <div className="bg-gradient-to-br from-primary/10 to-secondary/10 rounded-xl p-6 text-center hover:shadow-lg transition-all border-2 border-primary/20">
-              <div className="text-xs bg-primary text-white px-2 py-1 rounded-full mb-2 inline-block">BEST OFFER</div>
+            <div className="bg-slate-50 dark:bg-slate-900 rounded-xl p-6 text-center hover:shadow-lg transition-all border border-border">
               <div className="text-3xl font-bold text-primary mb-2">₹14,999</div>
               <div className="text-lg font-semibold text-foreground mb-2">Complete Package</div>
               <div className="text-sm text-muted-foreground mb-4">App + Website + Software</div>

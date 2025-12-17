@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer className="bg-slate-950 dark:bg-black text-white py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
           {/* Brand */}
           <div className="col-span-1 md:col-span-1">
             <div className="flex items-center gap-2 mb-4">
@@ -83,10 +83,81 @@ export default function Footer() {
               </li>
               <li>
                 <Link
+                  to="/services/database"
+                  className="hover:text-primary transition-colors"
+                >
+                  Database Solutions
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/services/security"
+                  className="hover:text-primary transition-colors"
+                >
+                  Cybersecurity
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/services/cloud"
+                  className="hover:text-primary transition-colors"
+                >
+                  Cloud Migration
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* More Services */}
+          <div>
+            <h4 className="font-semibold mb-4">More Services</h4>
+            <ul className="space-y-2 text-gray-400 text-sm">
+              <li>
+                <Link
+                  to="/services/ai-ml"
+                  className="hover:text-primary transition-colors"
+                >
+                  AI & Machine Learning
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/services/ecommerce"
+                  className="hover:text-primary transition-colors"
+                >
+                  E-commerce Solutions
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/services/enterprise"
+                  className="hover:text-primary transition-colors"
+                >
+                  Enterprise Solutions
+                </Link>
+              </li>
+              <li>
+                <Link
                   to="/services/consulting"
                   className="hover:text-primary transition-colors"
                 >
-                  Consulting
+                  IT Consulting
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/services/performance"
+                  className="hover:text-primary transition-colors"
+                >
+                  Performance Optimization
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/services/growth-strategy"
+                  className="hover:text-primary transition-colors"
+                >
+                  Growth Strategy
                 </Link>
               </li>
             </ul>
@@ -181,33 +252,16 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Team Information */}
-        <div className="border-t border-white/10 pt-8 mb-6">
-          <div className="text-center mb-4">
-            <h4 className="font-semibold text-white mb-3">Leadership Team</h4>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-2xl mx-auto">
-              <div className="text-center">
-                <p className="text-sm font-semibold text-primary">CFO (Chief Financial Officer)</p>
-                <p className="text-sm text-gray-300">Atul Raj</p>
-              </div>
-              <div className="text-center">
-                <p className="text-sm font-semibold text-secondary">CMO (Chief Marketing Officer)</p>
-                <p className="text-sm text-gray-300">Aaditya Kumar Jha</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
         {/* Bottom */}
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-gray-400 text-sm">
           <p>&copy; 2025 8bitdev. All rights reserved.</p>
           <div className="flex gap-6">
-            <a href="#" className="hover:text-primary transition-colors">
+            <Link to="/privacy-policy" className="hover:text-primary transition-colors">
               Privacy Policy
-            </a>
-            <a href="#" className="hover:text-primary transition-colors">
-              Terms of Service
-            </a>
+            </Link>
+            <Link to="/terms-conditions" className="hover:text-primary transition-colors">
+              Terms & Conditions
+            </Link>
           </div>
         </div>
       </div>
