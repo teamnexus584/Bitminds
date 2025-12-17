@@ -141,3 +141,17 @@
 .glow-border:hover::before {
   left: 100%;
 }
+
+/* Sliding banner animation */
+@keyframes slideLeftToRight {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-slide-left-to-right {
+  animation: slideLeftToRight 30s linear infinite;
+}

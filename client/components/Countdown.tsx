@@ -11,29 +11,60 @@ export default function Countdown({ className = '' }: CountdownProps) {
     seconds: 59
   });
 
+  // Initialize countdown from localStorage or set a new end time
+  useEffect(() => {
+    const getInitialTime = () => {
+      const savedEndTime = localStorage.getItem('countdownEndTime');
+      
+      if (savedEndTime) {
+        const endTime = new Date(savedEndTime);
+        const now = new Date();
+        const timeDiff = endTime.getTime() - now.getTime();
+        
+        if (timeDiff > 0) {
+          // Calculate remaining time
+          const hours = Math.floor(timeDiff / (1000 * 60 * 60));
+          const minutes = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60));
+          const seconds = Math.floor((timeDiff % (1000 * 60)) / 1000);
+          
+          return { hours, minutes, seconds };
+        }
+      }
+      
+      // Set new 24-hour countdown
+      const newEndTime = new Date();
+      newEndTime.setHours(newEndTime.getHours() + 24);
+      localStorage.setItem('countdownEndTime', newEndTime.toISOString());
+      
+      return { hours: 23, minutes: 59, seconds: 59 };
+    };
+
+    setTimeLeft(getInitialTime());
+  }, []);
+
   useEffect(() => {
     const timer = setInterval(() => {
-      setTimeLeft(prev => {
-        let { hours, minutes, seconds } = prev;
+      const savedEndTime = localStorage.getItem('countdownEndTime');
+      
+      if (savedEndTime) {
+        const endTime = new Date(savedEndTime);
+        const now = new Date();
+        const timeDiff = endTime.getTime() - now.getTime();
         
-        if (seconds > 0) {
-          seconds--;
-        } else if (minutes > 0) {
-          minutes--;
-          seconds = 59;
-        } else if (hours > 0) {
-          hours--;
-          minutes = 59;
-          seconds = 59;
+        if (timeDiff > 0) {
+          const hours = Math.floor(timeDiff / (1000 * 60 * 60));
+          const minutes = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60));
+          const seconds = Math.floor((timeDiff % (1000 * 60)) / 1000);
+          
+          setTimeLeft({ hours, minutes, seconds });
         } else {
           // Reset to 24 hours when it reaches 0
-          hours = 23;
-          minutes = 59;
-          seconds = 59;
+          const newEndTime = new Date();
+          newEndTime.setHours(newEndTime.getHours() + 24);
+          localStorage.setItem('countdownEndTime', newEndTime.toISOString());
+          setTimeLeft({ hours: 23, minutes: 59, seconds: 59 });
         }
-        
-        return { hours, minutes, seconds };
-      });
+      }
     }, 1000);
 
     return () => clearInterval(timer);

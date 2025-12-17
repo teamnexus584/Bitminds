@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ContactModal from "@/components/ContactModal";
 import Countdown from "@/components/Countdown";
+import SlidingBanner from "@/components/SlidingBanner";
 import { Check, Star, ArrowRight, Smartphone, Globe, Monitor, Package } from "lucide-react";
 
 const pricingPlans = [
@@ -20,7 +21,7 @@ const pricingPlans = [
       "Basic Contact Form",
       "SEO Ready",
       "Fast Loading",
-      "3 Months Support",
+      "No Support Included",
       "Limited Time Only"
     ],
     examples: "Personal Portfolio, Small Business Landing",
@@ -131,9 +132,14 @@ export default function Pricing() {
   return (
     <div className="min-h-screen bg-white dark:bg-slate-950">
       <Header />
+      
+      {/* Top Sliding Banner */}
+      <div className="fixed top-16 left-0 right-0 z-50">
+        <SlidingBanner />
+      </div>
 
       {/* Hero Section */}
-      <section className="py-20 md:py-32 bg-gradient-to-b from-white to-slate-50 dark:from-slate-950 dark:to-slate-900">
+      <section className="py-16 md:py-24 pt-20 bg-gradient-to-b from-white to-slate-50 dark:from-slate-950 dark:to-slate-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="text-center mb-8">
             <div className="mb-3">
