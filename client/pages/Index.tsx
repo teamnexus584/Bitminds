@@ -4,7 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ContactModal from "@/components/ContactModal";
 import Countdown from "@/components/Countdown";
-import SlidingBanner from "@/components/SlidingBanner";
+
 import {
   Code2,
   Smartphone,
@@ -162,10 +162,6 @@ export default function Index() {
     <div className="min-h-screen bg-white dark:bg-slate-950">
       <Header />
       
-      {/* Top Sliding Banner */}
-      <div className="fixed top-16 left-0 right-0 z-50">
-        <SlidingBanner />
-      </div>
 
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 bg-gradient-to-br from-slate-50 via-white to-blue-50 dark:from-slate-950 dark:to-slate-900">
@@ -511,10 +507,6 @@ export default function Index() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <div className="text-center mb-6">
-              <div className="inline-block px-6 py-3 rounded-full bg-green-100 text-green-700 font-bold text-sm border-2 border-green-300 mb-3">
-                🎉 LIMITED TIME: FREE 2-Page Website!
-              </div>
-              <br />
               <div className="inline-block px-4 py-2 rounded-full bg-primary/10 text-primary font-semibold text-sm">
                 💰 Transparent Pricing
               </div>
@@ -527,20 +519,7 @@ export default function Index() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
-            <div className="bg-gradient-to-br from-green-50 to-emerald-50 dark:from-green-900/20 dark:to-emerald-900/20 rounded-xl p-6 text-center hover:shadow-lg transition-all border-2 border-green-200 dark:border-green-800 relative">
-              <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 w-full px-2">
-                <div className="bg-red-50 border border-red-200 rounded-lg p-2">
-                  <Countdown className="justify-center text-xs" />
-                </div>
-              </div>
-              <div className="mt-4">
-                <div className="text-3xl font-bold text-green-600 mb-2">FREE</div>
-                <div className="text-lg font-semibold text-foreground mb-2">2-Page Website</div>
-                <div className="text-sm text-muted-foreground mb-4">2 Pages • Responsive • SEO Ready</div>
-                <div className="text-xs text-muted-foreground">Perfect for: Personal Portfolio, Landing Page</div>
-              </div>
-            </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
 
             <div className="bg-slate-50 dark:bg-slate-900 rounded-xl p-6 text-center hover:shadow-lg transition-all border border-border">
               <div className="text-3xl font-bold text-primary mb-2">₹4,499</div>

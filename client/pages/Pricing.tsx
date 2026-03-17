@@ -3,32 +3,12 @@ import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ContactModal from "@/components/ContactModal";
-import Countdown from "@/components/Countdown";
-import SlidingBanner from "@/components/SlidingBanner";
+
+
 import { Check, Star, ArrowRight, Smartphone, Globe, Monitor, Package } from "lucide-react";
 
+
 const pricingPlans = [
-  {
-    id: "free",
-    name: "Free Website",
-    price: "FREE",
-    originalPrice: "₹2,999",
-    description: "Limited time offer - Perfect for getting started",
-    features: [
-      "2 Professional Pages",
-      "Responsive Design",
-      "Mobile Optimized",
-      "Basic Contact Form",
-      "SEO Ready",
-      "Fast Loading",
-      "No Support Included",
-      "Limited Time Only"
-    ],
-    examples: "Personal Portfolio, Small Business Landing",
-    icon: Globe,
-    color: "from-green-500 to-emerald-500",
-    popular: false
-  },
   {
     id: "website",
     name: "Static Website",
@@ -133,20 +113,11 @@ export default function Pricing() {
     <div className="min-h-screen bg-white dark:bg-slate-950">
       <Header />
       
-      {/* Top Sliding Banner */}
-      <div className="fixed top-16 left-0 right-0 z-50">
-        <SlidingBanner />
-      </div>
 
       {/* Hero Section */}
       <section className="py-16 md:py-24 pt-20 bg-gradient-to-b from-white to-slate-50 dark:from-slate-950 dark:to-slate-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="text-center mb-8">
-            <div className="mb-3">
-              <span className="px-6 py-3 rounded-full bg-green-100 text-green-700 font-bold text-sm border-2 border-green-300 animate-pulse">
-                🎉 LIMITED TIME: FREE 2-Page Website!
-              </span>
-            </div>
             <div>
               <span className="px-4 py-2 rounded-full bg-primary/10 text-primary font-semibold text-sm">
                 💰 Transparent Pricing
@@ -207,13 +178,6 @@ export default function Pricing() {
                     </div>
                   )}
                   
-                  {plan.id === 'free' && (
-                    <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 w-full px-2">
-                      <div className="bg-red-50 border border-red-200 rounded-lg p-2">
-                        <Countdown className="justify-center" />
-                      </div>
-                    </div>
-                  )}
 
                   <div className={`inline-flex p-3 rounded-xl bg-gradient-to-br ${plan.color} text-white mb-6`}>
                     <Icon size={24} />
