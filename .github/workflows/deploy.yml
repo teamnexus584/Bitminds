@@ -32,9 +32,13 @@ jobs:
       - name: Build project
         run: pnpm run build:github-pages
 
+      - name: Add 404.html for SPA routing
+        run: cp dist/spa/index.html dist/spa/404.html
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist/spa
           cname: www.8bitsdev.click
+          force_orphan: true
