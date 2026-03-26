@@ -5,8 +5,6 @@ on:
     branches:
       - main
       - master
-    paths-ignore:
-      - 'docs/**'   # prevent infinite loop when this workflow commits docs/
 
 permissions:
   contents: write
@@ -14,6 +12,8 @@ permissions:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    # Skip deploy commits to prevent infinite loop
+    if: "!contains(github.event.head_commit.message, '[skip ci]')"
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -34,18 +34,19 @@ jobs:
       - name: Build project
         run: pnpm run build:github-pages
 
-      - name: Add 404.html for SPA routing
-        run: cp docs/index.html docs/404.html
-
-      - name: Add CNAME and nojekyll
+      - name: Copy built files to repo root
         run: |
-          echo "www.8bitsdev.click" > docs/CNAME
-          touch docs/.nojekyll
+          cp docs/index.html index.html
+          cp docs/index.html 404.html
+          rm -rf assets
+          cp -r docs/assets ./assets
+          echo "www.8bitsdev.click" > CNAME
+          touch .nojekyll
 
-      - name: Commit docs/ to master
+      - name: Commit and push built files to master
         run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
-          git add docs/
-          git diff --cached --quiet || git commit -m "deploy: update built site in docs/ [skip ci]"
+          git add index.html 404.html assets/ CNAME .nojekyll
+          git diff --cached --quiet || git commit -m "deploy: update built site at master root [skip ci]"
           git push origin master
