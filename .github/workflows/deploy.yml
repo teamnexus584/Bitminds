@@ -2,42 +2,34 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [ main ]
-  workflow_dispatch:
+    branches:
+      - main
+      - master
 
 permissions:
   contents: write
 
 jobs:
-  build-and-deploy:
+  deploy:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Checkout
-      uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-    - name: Setup pnpm
-      uses: pnpm/action-setup@v3
-      with:
-        version: 10
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
 
-    - name: Setup Node.js
-      uses: actions/setup-node@v4
-      with:
-        node-version: '20'
-        cache: 'pnpm'
+      - name: Install dependencies
+        run: npm ci || npm install
 
-    - name: Install dependencies
-      run: pnpm install --no-frozen-lockfile
+      - name: Build project
+        run: npm run build
 
-    - name: Build
-      run: pnpm run build:github-pages
-
-    - name: Deploy to master branch
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./dist/spa
-        publish_branch: master
-        keep_files: false
-        cname: www.8bitsdev.click
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          cname: www.8bitsdev.click

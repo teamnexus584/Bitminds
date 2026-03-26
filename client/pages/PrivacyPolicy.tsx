@@ -26,10 +26,7 @@ export default function PrivacyPolicy() {
               Your Privacy Matters
             </h1>
             <p className="text-lg text-muted-foreground">
-              Last updated: February 2026
-            </p>
-            <p className="text-sm text-muted-foreground mt-2">
-              This policy applies to our website (www.8bitsdev.click) and all mobile applications published by 8bitdev
+              Last updated: January 2025
             </p>
           </div>
         </div>
@@ -69,20 +66,11 @@ export default function PrivacyPolicy() {
               </ul>
 
               <h3 className="text-xl font-semibold text-foreground mb-3">Technical Information</h3>
-              <ul className="list-disc list-inside text-muted-foreground space-y-2 mb-6">
+              <ul className="list-disc list-inside text-muted-foreground space-y-2">
                 <li>IP address and browser information</li>
                 <li>Device information and operating system</li>
                 <li>Website usage data and analytics</li>
                 <li>Cookies and similar tracking technologies</li>
-              </ul>
-
-              <h3 className="text-xl font-semibold text-foreground mb-3">Mobile App Information</h3>
-              <ul className="list-disc list-inside text-muted-foreground space-y-2">
-                <li>Device identifiers (Android ID, Advertising ID)</li>
-                <li>App usage statistics and crash reports</li>
-                <li>Location data (only if you grant permission)</li>
-                <li>Camera and storage access (only when required for app functionality)</li>
-                <li>In-app purchases and transaction history</li>
               </ul>
             </div>
 
@@ -145,54 +133,6 @@ export default function PrivacyPolicy() {
               <p className="text-muted-foreground">
                 We use cookies and similar technologies to enhance your browsing experience, analyze website traffic, 
                 and personalize content. You can control cookie settings through your browser preferences.
-              </p>
-            </div>
-
-            {/* Mobile Apps Specific */}
-            <div className="mb-12 bg-primary/5 rounded-lg p-6 border-2 border-primary/20">
-              <h2 className="text-2xl font-bold text-foreground mb-4">Mobile Applications Privacy</h2>
-              
-              <h3 className="text-xl font-semibold text-foreground mb-3">Permissions</h3>
-              <p className="text-muted-foreground mb-4">
-                Our mobile apps may request the following permissions:
-              </p>
-              <ul className="list-disc list-inside text-muted-foreground space-y-2 mb-6">
-                <li><strong>Internet Access:</strong> Required for app functionality and content delivery</li>
-                <li><strong>Storage:</strong> To save app data and user preferences locally</li>
-                <li><strong>Camera:</strong> Only when you choose to upload photos or scan QR codes</li>
-                <li><strong>Location:</strong> Only if the app requires location-based features (optional)</li>
-                <li><strong>Notifications:</strong> To send you updates and alerts (you can opt-out anytime)</li>
-              </ul>
-
-              <h3 className="text-xl font-semibold text-foreground mb-3">Third-Party Services</h3>
-              <p className="text-muted-foreground mb-4">
-                Our mobile apps may use third-party services including:
-              </p>
-              <ul className="list-disc list-inside text-muted-foreground space-y-2 mb-6">
-                <li><strong>Google Play Services:</strong> For app distribution and updates</li>
-                <li><strong>Google AdMob:</strong> For displaying advertisements</li>
-                <li><strong>Firebase:</strong> For analytics, crash reporting, and cloud services</li>
-                <li><strong>Payment Processors:</strong> For in-app purchases (Google Play Billing)</li>
-              </ul>
-
-              <h3 className="text-xl font-semibold text-foreground mb-3">Advertising</h3>
-              <p className="text-muted-foreground mb-4">
-                We may display advertisements in our free apps using Google AdMob. AdMob may collect and use:
-              </p>
-              <ul className="list-disc list-inside text-muted-foreground space-y-2 mb-6">
-                <li>Device advertising identifiers</li>
-                <li>IP address and approximate location</li>
-                <li>App usage data for personalized ads</li>
-              </ul>
-              <p className="text-muted-foreground">
-                You can opt-out of personalized advertising through your device settings (Google Ad Settings for Android).
-              </p>
-
-              <h3 className="text-xl font-semibold text-foreground mb-3 mt-6">Children's Privacy</h3>
-              <p className="text-muted-foreground">
-                Our apps are not intended for children under 13 years of age. We do not knowingly collect personal 
-                information from children. If you believe we have collected information from a child, please contact us 
-                immediately, and we will delete it.
               </p>
             </div>
 

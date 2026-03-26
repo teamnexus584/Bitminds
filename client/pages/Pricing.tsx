@@ -3,10 +3,7 @@ import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ContactModal from "@/components/ContactModal";
-
-
 import { Check, Star, ArrowRight, Smartphone, Globe, Monitor, Package } from "lucide-react";
-
 
 const pricingPlans = [
   {
@@ -44,7 +41,7 @@ const pricingPlans = [
       "API Integration",
       "Push Notifications",
       "Play Store Ready",
-      "**FREE Play Store Publish**",
+      "Play Store Publish Included",
       "3 Months Support"
     ],
     examples: "E-commerce, Booking, Social, Business",
@@ -86,7 +83,6 @@ const pricingPlans = [
       "Backend & Database",
       "Admin Panel",
       "API Integration",
-      "**FREE Play Store Publish**",
       "App Store Deployment",
       "6 Months Support",
       "Free Maintenance"
@@ -113,7 +109,6 @@ export default function Pricing() {
     <div className="min-h-screen bg-white dark:bg-slate-950">
       <Header />
       
-
       {/* Hero Section */}
       <section className="py-16 md:py-24 pt-20 bg-gradient-to-b from-white to-slate-50 dark:from-slate-950 dark:to-slate-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -127,7 +122,7 @@ export default function Pricing() {
           
           <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6">
             Simple, Affordable
-            <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent block">
+            <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent block pb-4 leading-normal">
               Pricing Plans
             </span>
           </h1>
@@ -163,10 +158,10 @@ export default function Pricing() {
               return (
                 <div
                   key={plan.id}
-                  className={`relative bg-white dark:bg-slate-900 rounded-2xl p-8 border-2 transition-all duration-300 hover:shadow-2xl hover:scale-105 ${
+                  className={`relative bg-gradient-to-b from-white/90 to-white/60 dark:bg-slate-900 rounded-3xl p-8 border hover:-translate-y-4 transform-gpu transition-all duration-500 backdrop-blur-xl ${
                     plan.popular 
-                      ? 'border-primary shadow-xl shadow-primary/20' 
-                      : 'border-border hover:border-primary/50'
+                      ? 'border-white shadow-[0_30px_60px_-15px_rgba(59,130,246,0.6),_inset_0_2px_15px_rgba(255,255,255,1)] ring-2 ring-primary scale-105 z-10' 
+                      : 'border-white/80 shadow-[0_20px_40px_-15px_rgba(0,0,0,0.1),_inset_0_2px_10px_rgba(255,255,255,0.8)] hover:shadow-[0_40px_80px_-20px_rgba(0,0,0,0.2)]'
                   }`}
                 >
                   {plan.popular && (
@@ -178,7 +173,6 @@ export default function Pricing() {
                     </div>
                   )}
                   
-
                   <div className={`inline-flex p-3 rounded-xl bg-gradient-to-br ${plan.color} text-white mb-6`}>
                     <Icon size={24} />
                   </div>

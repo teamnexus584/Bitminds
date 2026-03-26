@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { FileText, Scale, AlertCircle, CheckCircle } from "lucide-react";
+import { Scale, FileText, CheckCircle2, AlertTriangle, HelpCircle, Shield } from "lucide-react";
 
 export default function TermsConditions() {
   React.useEffect(() => {
@@ -14,18 +14,19 @@ export default function TermsConditions() {
       <Header />
 
       {/* Hero Section */}
-      <section className="py-20 md:py-32 bg-gradient-to-b from-white to-slate-50 dark:from-slate-950 dark:to-slate-900">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative py-20 md:py-32 bg-gradient-to-b from-blue-50 to-white dark:from-slate-900 dark:to-slate-950 overflow-hidden">
+        <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-blue-500/20 to-transparent"></div>
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-12">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary font-semibold text-sm mb-6">
-              <FileText size={16} />
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-100/50 dark:bg-blue-500/10 text-blue-600 dark:text-blue-400 font-bold text-sm mb-6 border border-blue-200 dark:border-blue-500/20 shadow-sm backdrop-blur-sm">
+              <Scale size={16} />
               Terms & Conditions
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-              Terms of Service
+            <h1 className="text-4xl md:text-5xl font-black text-gray-900 dark:text-white mb-6 tracking-tight">
+              Agreement of Service
             </h1>
-            <p className="text-lg text-muted-foreground">
-              Last updated: February 2026
+            <p className="text-lg text-gray-500 dark:text-gray-400 font-medium max-w-2xl mx-auto">
+              Last updated: January 2025
             </p>
           </div>
         </div>
@@ -34,189 +35,87 @@ export default function TermsConditions() {
       {/* Content */}
       <section className="py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="prose prose-lg max-w-none dark:prose-invert">
+          <div className="prose prose-lg max-w-none text-gray-600 dark:text-gray-300">
             
             {/* Introduction */}
-            <div className="mb-12">
-              <h2 className="text-2xl font-bold text-foreground mb-4 flex items-center gap-2">
-                <Scale size={24} className="text-primary" />
-                Agreement to Terms
+            <div className="mb-12 p-8 rounded-3xl bg-gray-50/50 dark:bg-white/5 border border-gray-100 dark:border-white/10">
+              <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-3">
+                <FileText size={24} className="text-blue-500" />
+                1. Introduction
               </h2>
-              <p className="text-muted-foreground leading-relaxed">
-                By accessing or using the services provided by 8bitdev ("we," "our," or "us") through our website 
-                <strong> www.8bitsdev.click</strong> or mobile applications, you agree to be bound by these Terms and Conditions. 
-                If you do not agree with any part of these terms, you must not use our services.
+              <p className="leading-relaxed font-medium">
+                Welcome to 8bitdev ("we," "our," or "us"). By accessing or using our website <strong>www.8bitsdev.click</strong> and our digital services, you agree to be bound by these Terms and Conditions. Please read them carefully before proceeding with our services.
               </p>
             </div>
 
             {/* Services */}
             <div className="mb-12">
-              <h2 className="text-2xl font-bold text-foreground mb-4">Our Services</h2>
-              <p className="text-muted-foreground mb-4">
-                8bitdev provides digital development services including but not limited to:
-              </p>
-              <ul className="list-disc list-inside text-muted-foreground space-y-2">
-                <li>Web application development</li>
-                <li>Mobile application development</li>
-                <li>UI/UX design services</li>
-                <li>Cloud infrastructure and deployment</li>
-                <li>IT consulting and technical support</li>
-                <li>Database design and optimization</li>
-                <li>Cybersecurity services</li>
-              </ul>
-            </div>
-
-            {/* User Obligations */}
-            <div className="mb-12">
-              <h2 className="text-2xl font-bold text-foreground mb-4 flex items-center gap-2">
-                <CheckCircle size={24} className="text-primary" />
-                User Obligations
+              <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-3">
+                <CheckCircle2 size={24} className="text-emerald-500" />
+                2. Our Services
               </h2>
-              <p className="text-muted-foreground mb-4">When using our services, you agree to:</p>
-              <ul className="list-disc list-inside text-muted-foreground space-y-2">
-                <li>Provide accurate and complete information</li>
-                <li>Maintain the confidentiality of your account credentials</li>
-                <li>Use our services only for lawful purposes</li>
-                <li>Not attempt to gain unauthorized access to our systems</li>
-                <li>Not interfere with or disrupt our services</li>
-                <li>Respect intellectual property rights</li>
-                <li>Comply with all applicable laws and regulations</li>
-              </ul>
+              <p className="mb-4 font-medium">
+                We provide software development, web & mobile applications, UI/UX design, and consulting services. 
+                All projects are subject to individual contracts or statements of work (SOW) which detail specific deliverables, timelines, and costs.
+              </p>
             </div>
 
             {/* Intellectual Property */}
             <div className="mb-12">
-              <h2 className="text-2xl font-bold text-foreground mb-4">Intellectual Property Rights</h2>
-              <h3 className="text-xl font-semibold text-foreground mb-3">Our Content</h3>
-              <p className="text-muted-foreground mb-4">
-                All content, features, and functionality on our website and applications, including but not limited to 
-                text, graphics, logos, icons, images, audio clips, and software, are the exclusive property of 8bitdev 
-                and are protected by copyright, trademark, and other intellectual property laws.
-              </p>
-              
-              <h3 className="text-xl font-semibold text-foreground mb-3">Client Projects</h3>
-              <p className="text-muted-foreground">
-                Upon full payment, clients receive ownership rights to the deliverables as specified in the project agreement. 
-                We retain the right to showcase completed projects in our portfolio unless otherwise agreed in writing.
-              </p>
-            </div>
-
-            {/* Payment Terms */}
-            <div className="mb-12">
-              <h2 className="text-2xl font-bold text-foreground mb-4">Payment Terms</h2>
-              <ul className="list-disc list-inside text-muted-foreground space-y-2">
-                <li>Payment terms are specified in individual project agreements</li>
-                <li>Deposits are typically required before project commencement</li>
-                <li>Final payment is due upon project completion and delivery</li>
-                <li>Late payments may incur additional fees</li>
-                <li>All fees are non-refundable unless otherwise stated</li>
-                <li>Prices are subject to change with prior notice</li>
-              </ul>
-            </div>
-
-            {/* Project Delivery */}
-            <div className="mb-12">
-              <h2 className="text-2xl font-bold text-foreground mb-4">Project Delivery & Timelines</h2>
-              <p className="text-muted-foreground mb-4">
-                We strive to meet agreed-upon deadlines. However, timelines may be affected by:
-              </p>
-              <ul className="list-disc list-inside text-muted-foreground space-y-2">
-                <li>Delays in client feedback or content provision</li>
-                <li>Scope changes or additional feature requests</li>
-                <li>Technical challenges or third-party dependencies</li>
-                <li>Force majeure events beyond our control</li>
-              </ul>
-            </div>
-
-            {/* Warranties & Disclaimers */}
-            <div className="mb-12 bg-amber-50 dark:bg-amber-950/20 rounded-lg p-6 border-2 border-amber-200 dark:border-amber-800">
-              <h2 className="text-2xl font-bold text-foreground mb-4 flex items-center gap-2">
-                <AlertCircle size={24} className="text-amber-600" />
-                Warranties & Disclaimers
+              <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-3">
+                <Shield size={24} className="text-purple-500" />
+                3. Intellectual Property
               </h2>
-              <p className="text-muted-foreground mb-4">
-                Our services are provided "as is" without warranties of any kind, either express or implied. We do not guarantee:
-              </p>
-              <ul className="list-disc list-inside text-muted-foreground space-y-2">
-                <li>Uninterrupted or error-free service</li>
-                <li>Specific results or outcomes</li>
-                <li>Compatibility with all systems or devices</li>
-                <li>Freedom from viruses or harmful components</li>
+              <ul className="list-none space-y-4">
+                <li className="flex gap-3">
+                  <div className="mt-1 w-2 h-2 rounded-full bg-purple-500 shrink-0"></div>
+                  <span className="font-medium">All materials on this website, including text, graphics, logos, and software, are the property of 8bitdev or its licensors.</span>
+                </li>
+                <li className="flex gap-3">
+                  <div className="mt-1 w-2 h-2 rounded-full bg-purple-500 shrink-0"></div>
+                  <span className="font-medium">Upon full payment for custom development services, clients receive the agreed-upon rights to the deliverables as specified in their contract.</span>
+                </li>
               </ul>
             </div>
 
-            {/* Limitation of Liability */}
-            <div className="mb-12">
-              <h2 className="text-2xl font-bold text-foreground mb-4">Limitation of Liability</h2>
-              <p className="text-muted-foreground">
-                To the maximum extent permitted by law, 8bitdev shall not be liable for any indirect, incidental, 
-                special, consequential, or punitive damages, including but not limited to loss of profits, data, 
-                or business opportunities arising from the use or inability to use our services.
-              </p>
-            </div>
-
-            {/* Termination */}
-            <div className="mb-12">
-              <h2 className="text-2xl font-bold text-foreground mb-4">Termination</h2>
-              <p className="text-muted-foreground mb-4">
-                We reserve the right to terminate or suspend access to our services immediately, without prior notice, for:
-              </p>
-              <ul className="list-disc list-inside text-muted-foreground space-y-2">
-                <li>Breach of these Terms and Conditions</li>
-                <li>Non-payment of fees</li>
-                <li>Fraudulent or illegal activities</li>
-                <li>Any conduct that harms our business or reputation</li>
-              </ul>
-            </div>
-
-            {/* Governing Law */}
-            <div className="mb-12">
-              <h2 className="text-2xl font-bold text-foreground mb-4">Governing Law</h2>
-              <p className="text-muted-foreground">
-                These Terms and Conditions are governed by and construed in accordance with the laws of India. 
-                Any disputes arising from these terms shall be subject to the exclusive jurisdiction of the courts in India.
-              </p>
-            </div>
-
-            {/* Changes to Terms */}
-            <div className="mb-12">
-              <h2 className="text-2xl font-bold text-foreground mb-4">Changes to Terms</h2>
-              <p className="text-muted-foreground">
-                We reserve the right to modify these Terms and Conditions at any time. Changes will be effective 
-                immediately upon posting to our website. Your continued use of our services after changes constitutes 
-                acceptance of the modified terms.
+            {/* Limitations of Liability */}
+            <div className="mb-12 p-8 rounded-3xl bg-red-50/50 dark:bg-red-500/5 border border-red-100 dark:border-red-500/10">
+              <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-3">
+                <AlertTriangle size={24} className="text-red-500" />
+                4. Limitations of Liability
+              </h2>
+              <p className="font-medium">
+                To the maximum extent permitted by law, 8bitdev shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from or related to your use of our services or website.
               </p>
             </div>
 
             {/* Contact */}
-            <div className="mb-12 bg-slate-50 dark:bg-slate-900 rounded-lg p-6">
-              <h2 className="text-2xl font-bold text-foreground mb-4">Contact Information</h2>
-              <p className="text-muted-foreground mb-4">
-                For questions about these Terms and Conditions, please contact us:
+            <div className="mb-12">
+              <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-3">
+                <HelpCircle size={24} className="text-orange-500" />
+                5. Contact Us
+              </h2>
+              <p className="font-medium">
+                If you have queries regarding these terms, please email us at <a href="mailto:admin@8bitsdev.click" className="text-blue-500 hover:underline">admin@8bitsdev.click</a>.
               </p>
-              <div className="space-y-2 text-muted-foreground">
-                <p>Email: <a href="mailto:admin@8bitsdev.click" className="text-primary hover:underline">admin@8bitsdev.click</a></p>
-                <p>Phone: <a href="tel:+918521080076" className="text-primary hover:underline">+91 8521080076</a></p>
-                <p>Website: <a href="https://www.8bitsdev.click" className="text-primary hover:underline">www.8bitsdev.click</a></p>
-              </div>
             </div>
 
           </div>
 
           {/* Navigation */}
-          <div className="mt-12 pt-8 border-t border-border">
+          <div className="mt-12 pt-8 border-t border-gray-200 dark:border-white/10">
             <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
               <Link 
-                to="/" 
-                className="px-6 py-3 border-2 border-primary text-primary rounded-lg font-semibold hover:bg-primary/5 transition-all"
+                to="/privacy-policy" 
+                className="px-6 py-3 border-2 border-gray-200 dark:border-white/10 text-gray-700 dark:text-gray-300 rounded-xl font-bold hover:bg-gray-50 dark:hover:bg-white/5 transition-all w-full sm:w-auto text-center"
               >
-                ← Back to Home
+                ← Privacy Policy
               </Link>
               <Link 
-                to="/privacy-policy" 
-                className="px-6 py-3 bg-primary text-primary-foreground rounded-lg font-semibold hover:bg-primary/90 transition-all"
+                to="/" 
+                className="px-6 py-3 bg-blue-600 text-white rounded-xl font-bold hover:bg-blue-700 hover:shadow-lg hover:-translate-y-0.5 transition-all w-full sm:w-auto text-center"
               >
-                View Privacy Policy →
+                Back to Home →
               </Link>
             </div>
           </div>

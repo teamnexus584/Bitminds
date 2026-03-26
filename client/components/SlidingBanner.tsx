@@ -6,10 +6,10 @@ interface SlidingBannerProps {
 
 export default function SlidingBanner({ className = '' }: SlidingBannerProps) {
   const messages = [
-    "🎉 LIMITED TIME: FREE 2-Page Website! No Support Included - Grab This Deal Now!",
-    "⚡ HURRY UP: Get Your FREE Website Before Offer Expires!",
-    "🔥 EXCLUSIVE OFFER: Professional 2-Page Website Absolutely FREE!",
-    "💯 LAST CHANCE: Free Website Development - Limited Time Only!"
+    "🚀 Professional Web & App Development at Affordable Prices!",
+    "⚡ Static Website starting at ₹4,499 — Responsive, SEO Ready!",
+    "🔥 Android & iOS Apps with Backend Integration — Starting ₹7,999!",
+    "💯 Complete Business Package — Website + App + Software at ₹14,999!"
   ];
 
   return (
