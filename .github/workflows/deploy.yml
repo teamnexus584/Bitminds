@@ -5,6 +5,8 @@ on:
     branches:
       - main
       - master
+    paths-ignore:
+      - 'docs/**'   # prevent infinite loop when this workflow commits docs/
 
 permissions:
   contents: write
@@ -33,12 +35,17 @@ jobs:
         run: pnpm run build:github-pages
 
       - name: Add 404.html for SPA routing
-        run: cp dist/spa/index.html dist/spa/404.html
+        run: cp docs/index.html docs/404.html
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist/spa
-          cname: www.8bitsdev.click
-          force_orphan: true
+      - name: Add CNAME and nojekyll
+        run: |
+          echo "www.8bitsdev.click" > docs/CNAME
+          touch docs/.nojekyll
+
+      - name: Commit docs/ to master
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add docs/
+          git diff --cached --quiet || git commit -m "deploy: update built site in docs/ [skip ci]"
+          git push origin master

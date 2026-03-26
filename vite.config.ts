@@ -15,7 +15,7 @@ export default defineConfig(({ mode, command }) => ({
     },
   },
   build: {
-    outDir: "dist/spa",
+    outDir: "docs",
   },
   plugins: [react(), mode === 'development' ? expressPlugin() : null].filter(Boolean),
   resolve: {
